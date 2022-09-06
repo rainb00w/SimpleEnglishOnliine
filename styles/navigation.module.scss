@@ -1,0 +1,116 @@
+.bgColor {
+  background-color: #874b79;
+}
+
+.navigationItems {
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  a {
+    color: #ffffff;
+    &:hover {
+      color: #ffd24e;
+    }
+  }
+}
+
+.navBar {
+  margin-left: 60px;
+  font-family: "Mont";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  a {
+    @media only screen and (max-width: 1199px) {
+          padding-left: 45px;
+    }
+
+  }
+  @media screen and (min-width: 1200px) {
+    :not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  @media only screen and (max-width: 1199px) {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 0px;
+    font-family: "Mont";
+    text-align: left;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 55px;
+    /* or 220% */
+
+    color: #ffffff;
+  }
+}
+
+.socialIcons {
+  margin-left: 150;
+  display: flex;
+  align-items: center;
+  a:first-child {
+    margin-right: 20px;
+  }
+  // :first-child {
+  //   margin-right: 20px;
+  //     @media screen and (max-width: 480px) {
+  //   margin-right: 15px;
+  // }
+  // }
+
+
+}
+
+.svg_images {
+  width: 30px;
+  height: 30px;
+  fill: #ffd24e;
+}
+
+.svg_images:hover {
+  fill: #ffffff;
+}
+
+.form_button {
+  margin-top: 30px;
+  background: #ffd24e;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.15);
+  border-radius: 50px;
+  padding: 20px 10px 15px 10px;
+  width: 270px;
+  border-style: none;
+  font-family: "Mont";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 23px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #1b1b1b;
+}
+
+.form_button_container{
+display: flex;
+align-self: center;
+}
+.header_navigation_logo {
+  cursor: pointer;
+  position: relative;
+  margin-left: 10px;
+  @media only screen and (max-width: 1199px) and (min-width: 768px) {
+   margin-left: 20px;
+  }
+  @media only screen and (max-width: 767px) {
+    margin-left: 15px;
+  }
+}

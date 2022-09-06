@@ -1,0 +1,178 @@
+.underHeader {
+  padding: 18px 15px 18px 15px;
+  margin-top: 30px;
+  background-color: #f6deba;
+  max-width: 715px;
+
+  box-shadow: 0px 4px 13px rgba(49, 49, 49, 0.15);
+  border-radius: 10px;
+
+  font-family: "Mont";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 27px;
+  text-align: center;
+  position: relative;
+  color: #000000;
+
+  @media only screen and (max-width: 767px) {
+    width: 350px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+  @media only screen and (max-width: 479px) {
+    width: 300px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+
+.underHeader::before {
+  content: "";
+  background-image: url("../public/img/forAdults/0_vector@2x.png");
+  position: absolute;
+  background-size: 80px 75px;
+  display: inline-block;
+  width: 80px;
+  height: 75px;
+
+  left: 50px;
+  top: -40px;
+  z-index: 1;
+  @media only screen and (max-width: 767px) {
+    background-size: 60px 55px;
+    display: inline-block;
+    width: 60px;
+    height: 55px;
+    left: -20px;
+    top: -25px;
+  }
+  @media only screen and (max-width: 479px) {
+    background-size: 40px 35px;
+    width: 40px;
+    height: 35px;
+    left: 10px;
+    top: -25px;
+  }
+}
+
+.aboutHeader {
+  width: 380px;
+  text-align: center;
+}
+
+.aboutSchool {
+  font-family: "Stroke", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 65px;
+  line-height: 75px;
+  text-align: center;
+
+  color: #1b1b1b;
+  @media screen and (max-width: 480px) {
+    font-size: 50px;
+    line-height: 58px;
+  }
+}
+
+.aboutSimpleEnglish {
+  font-family: "Verdana", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 45px;
+  text-align: center;
+
+  color: #874b79;
+  @media screen and (max-width: 480px) {
+    font-size: 40px;
+    line-height: 58px;
+  }
+}
+
+.flexCentered {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (max-width: 1199px) and (min-width: 768px) {
+    margin-top: 60px;
+  }
+  @media only screen and (max-width: 767px) {
+    margin-top: 30px;
+  }
+}
+
+.aboutListItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 60px;
+
+  max-width: 570px;
+  height: 187px;
+  background: #ffffff;
+  box-shadow: 0px 4px 13px rgba(49, 49, 49, 0.15);
+  border-radius: 10px;
+
+  font-family: "Mont";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 38px;
+
+  color: #59204d;
+
+  @media only screen and (max-width: 767px) {
+    max-width: 426px;
+    padding-left:30px;
+    font-size: 27px;
+  line-height: 38px;
+  }
+  @media only screen and (max-width: 479px) {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 290px;
+    height: 140px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.abouListText {
+  margin-left: 43px;
+}
+
+.aboutList {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  & li:not(:last-child) {
+    margin-bottom: 27px;
+  }
+  & li:nth-child(2n) {
+    margin-left: 30px;
+    @media only screen and (max-width: 767px) {
+      margin-left: 0px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    margin-bottom: 50px;
+    margin-left: 0px;
+  }
+  @media only screen and (max-width: 479px) {
+    margin-top: 30px;
+  }
+}

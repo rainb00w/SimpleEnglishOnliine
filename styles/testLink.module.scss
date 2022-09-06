@@ -1,0 +1,79 @@
+.testLinkDiv {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: #f6deba;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media only screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
+.testLinkDivImg {
+  // height: 50px;
+}
+
+.testLinkP {
+  font-family: Verdana;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 42.54px;
+
+  color: #1b1b1b;
+  @media only screen and (max-width: 479px) {
+    font-size: 25px;
+  }
+
+}
+
+.testLinkH3 {
+  font-family: "Stroke";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 65px;
+  line-height: 75px;
+
+  color: #1b1b1b;
+}
+
+.testLinkText {
+  margin-left: 46px;
+  width: 360px;
+  @media only screen and (max-width: 767px) {
+    text-align: center;
+    margin-left: 0px;
+  }
+  @media only screen and (max-width: 479px) {
+    width: 290px;
+  }
+}
+
+.testLinkBtn {
+  margin-top: 30px;
+  padding: 19px 40px 15px 40px;
+  background: #874b79;
+  box-shadow: 0px 4px 5px rgba(135, 75, 121, 0.34);
+  border-radius: 50px;
+  border-style: none;
+
+  font-family: "Mont";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 23px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.testLinkBtn:hover {
+  cursor: pointer;
+  color: #874b79;
+  background: #ffffff;
+}

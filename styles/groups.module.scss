@@ -1,0 +1,223 @@
+.plansContainer {
+  background-color: #874b79;
+  padding-bottom: 100px;
+  // height: 1000px;
+  @media only screen and (max-width: 1199px) and (min-width: 768px) {
+  }
+}
+
+.flexContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 80px;
+
+  @media only screen and (max-width: 1199px) {
+    flex-direction: column;
+    .listBoxes:first-child {
+      margin-bottom: 100px;
+    }
+  }
+}
+
+.listFlex {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.plansMainText {
+  padding-top: 67px;
+  font-family: "Stroke";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 65px;
+  line-height: 75px;
+  /* identical to box height */
+
+  text-align: center;
+  color: #ffffff;
+  @media only screen and (max-width: 1199px) {
+    max-width: 470px;
+    font-size: 65px;
+    line-height: 75px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    max-width: 470px;
+    
+  }
+  @media only screen and (max-width: 479px) {
+    padding-top: 40px;
+    max-width: 300px;
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
+
+.plansMainTextContainer {
+  @media only screen and (max-width: 1199px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.priceAndBtn {
+  display: flex;
+  flex-direction: column;
+}
+
+.listBoxes {
+  width: 571px;
+  height: 730px;
+  background: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  @media only screen and (max-width: 767px) {
+    width: 420px;
+    height: 690px;
+  }
+  @media only screen and (max-width: 479px) {
+    width: 300px;
+    height: 690px;
+  }
+}
+.listItem {
+  margin-left: 60px;
+  margin-top: 15px;
+  font-family: "Mont";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+
+  @media only screen and (max-width: 767px) {
+    margin-left: 25px;
+    margin-right: 15px;
+    font-weight: 200;
+    font-size: 17px;
+    line-height: 17px;
+  }
+  @media only screen and (max-width: 479px) {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  color: #1b1b1b;
+}
+
+.listHeader {
+  position: relative;
+  font-family: "Verdana";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 40px;
+
+  color: #1b1b1b;
+  @media only screen and (max-width: 767px) {
+    font-size: 26px;
+    line-height: 36px;
+  }
+}
+
+.rightListHeader::before {
+  content: "";
+  background-image: url("../public/img/forAdults/list_single@2x.png");
+  position: absolute;
+  background-size: 85px 85px;
+  display: inline-block;
+  width: 85px;
+  height: 85px;
+
+  left: 100px;
+  top: -95px;
+  z-index: 1;
+  @media only screen and (max-width: 479px) {
+    left: 90px;
+  }
+}
+
+.leftListHeader::before {
+  content: "";
+  background-image: url("../public/img/forAdults/list_group@2x.png");
+  position: absolute;
+  background-size: 85px 85px;
+  display: inline-block;
+  width: 85px;
+  height: 85px;
+
+  left: 40px;
+  top: -95px;
+  z-index: 1;
+  @media only screen and (max-width: 479px) {
+    left: 20px;
+  }
+}
+
+.price {
+  text-align: center;
+  font-family: "Mont";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 51px;
+  padding-bottom: 20px;
+
+  color: #59204d;
+  @media screen and (max-width: 479px) {
+    margin-top: 10px;
+  }
+}
+
+.listItemText {
+  margin-left: 10px;
+}
+
+.form_button {
+  background: #ffd24e;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.15);
+  border-radius: 50px;
+  padding: 20px 20px 15px 20px;
+  width: 370px;
+  border-style: none;
+  font-family: "Mont";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 23px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #1b1b1b;
+  @media screen and (max-width: 479px) {
+    width: 280px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+.form_button:hover{
+  cursor: pointer;
+  color: #ffffff;
+  background: #874b79;
+}

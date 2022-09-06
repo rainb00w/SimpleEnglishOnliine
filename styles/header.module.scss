@@ -1,0 +1,210 @@
+.color {
+  color: #874b79;
+}
+
+.mainBlock {
+  background-color: #fbf6f3;
+}
+
+.leftBlock {
+  position: relative;
+  z-index: 3;
+  padding-bottom: 50px;
+  @media only screen and (max-width: 1199px) and (min-width: 768px) {
+    margin-left: 50px;
+  }
+  @media only screen and (max-width: 767px)  {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding-bottom: 30px;
+  }
+}
+
+.leftBlock::before {
+  content: "";
+  background-image: url("../public/img/forAdults/girl1.jpg");
+  position: absolute;
+  display: inline-block;
+  background-size: 683px 810px;
+  width: 683px;
+  height: 810px;
+  left: 550px;
+  z-index: -1;
+
+  @media only screen and (max-width: 1199px) and (min-width: 768px) {
+    left: 230px;
+    background-size: 734px 870px;
+    width: 734px;
+    height: 870px;
+  }
+
+  @media only screen and (max-width: 767px)  {
+    left: 0px;
+    opacity: 0.25;
+  }
+  @media only screen and (max-width: 480px)  {
+    left: -70px;
+    opacity: 0.25;
+  }
+}
+
+.textH1 {
+  width: 810px;
+  font-family: "Verdana";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 55px;
+  text-transform: uppercase;
+  padding-top: 75px;
+
+  @media only screen and (max-width: 1199px) and (min-width: 768px) {
+    width: 480px;
+  }
+
+  @media only screen and (max-width: 767px)  {
+    width: 416px;
+    padding-top: 35px;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 129%;
+    
+    text-transform: uppercase;
+  }
+  @media only screen and (max-width: 480px)  {
+    width: 300px;
+    padding-top: 25px;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 129%;
+    
+    text-transform: uppercase;
+  }
+
+}
+
+.leftBlocktextH1{
+  @media only screen and (max-width: 767px)  {
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+ 
+}
+
+.form {
+  background-color: #ffd24e;
+  margin-top: 100px;
+  padding: 32px;
+  border-radius: 10px;
+  width: 470px;
+  height: 418px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+
+  @media only screen and (max-width: 767px)  {
+    width: 420px;
+  }
+
+  @media only screen and (max-width: 480px)  {
+    margin-top: 70px;
+    width: 300px;
+  }
+}
+
+.form::before {
+  content: "Перевіриш ?";
+  font-family: "Stroke";
+  position: absolute;
+  left: 20px;
+  top: -70px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 65px;
+  line-height: 75px;
+  /* identical to box height */
+
+  color: #1a1a1a;
+
+  transform: rotate(-9.12deg);
+  z-index: 1;
+  
+  @media only screen and (max-width: 480px)  {
+    font-size: 40px;
+    top: -40px;
+     }
+}
+
+.form_header {
+  font-family: "Mont";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #1b1b1b;
+}
+
+.form_input {
+  width: 407px;
+  height: 48px;
+  border-radius: 5px;
+  border-style: none;
+  margin-top: 20px;
+  padding-left: 22px;
+  font-family: "Mont";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #535353;
+  @media only screen and (max-width: 767px)  {
+    width: 360px;
+  }
+
+  @media only screen and (max-width: 480px)  {
+    width: 250px;
+  }
+}
+
+
+.form_button {
+  margin-top: 25px;
+  width: 238px;
+  height: 57px;
+  background: #874b79;
+  box-shadow: 0px 4px 5px rgba(135, 75, 121, 0.34);
+  border-radius: 50px;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: "Mont";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 23px;
+  /* identical to box height */
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-style: none;
+  
+}
+
+.form_button:hover{
+  color: #874b79;
+  background: #ffffff;
+}
+
+.formRequiredText{
+  margin-top: 5px;
+  color: #874b79;
+}
