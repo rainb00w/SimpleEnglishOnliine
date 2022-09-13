@@ -25,7 +25,7 @@ export function FirstBlock() {
 
     <div className={s.footerFirstBlockRight}>
       <div className={s.footerFirstBlockRightImg}>
-        <Link href="/instagram">
+        <Link href="https://www.instagram.com/simple.english.online">
           <a>
           <svg
                   width="20"
@@ -42,7 +42,7 @@ export function FirstBlock() {
           </a>
         </Link>
       </div>
-      <Link href="/telegram">
+      <Link href="https://t.me/simpleenglishonl">
         <a>
         <svg
                   width="21"

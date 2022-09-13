@@ -122,14 +122,14 @@ padding-bottom: 30px;
 
 .form::before {
   content: "Перевіриш ?";
-  font-family: "Stroke";
   position: absolute;
   left: 20px;
-  top: -70px;
+  top: -50px;
+  font-family: "appleberry";
   font-style: normal;
-  font-weight: 500;
-  font-size: 65px;
-  line-height: 75px;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 61px;
   /* identical to box height */
 
   color: #1a1a1a;

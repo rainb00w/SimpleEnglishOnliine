@@ -100,7 +100,7 @@ export default function Navigation() {
 
           {!toggled && (
             <div className={s.socialIcons}>
-              <Link href="/instagram">
+              <Link href="https://www.instagram.com/simple.english.online">
                 <a>
                   <svg
                     width="20"
@@ -116,7 +116,7 @@ export default function Navigation() {
                   </svg>
                 </a>
               </Link>
-              <Link href="/telegram">
+              <Link href="https://t.me/simpleenglishonl">
                 <a>
                   <svg
                     width="21"

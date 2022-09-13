@@ -32,10 +32,10 @@ export default function Footer() {
 
           <div className={s.footerWrapperFlexBottom}>
             <div>
-              <Link href="/">
+              <Link href="public_offer_agreement">
                 <a>Договір-оферта |</a>
               </Link>
-              <Link href="/">
+              <Link href="privacy_policy">
                 <a>Політика конфіденційності</a>
               </Link>
               {width < 1200 && (
