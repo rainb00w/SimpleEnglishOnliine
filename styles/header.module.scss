@@ -4,6 +4,15 @@
 
 .mainBlock {
   background-color: #fbf6f3;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-image: url(../public/img/forAdults/headerImage@2x.png);
+  height: 820px;
+  max-width: 1600px;
 }
 
 .leftBlock {
@@ -13,42 +22,15 @@
   @media only screen and (max-width: 1199px) and (min-width: 768px) {
     margin-left: 50px;
   }
-  @media only screen and (max-width: 767px)  {
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-padding-bottom: 30px;
+  @media only screen and (max-width: 767px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 30px;
   }
 }
 
-.leftBlock::before {
-  content: "";
-  background-image: url("../public/img/forAdults/girl1.jpg");
-  position: absolute;
-  display: inline-block;
-  background-size: 683px 810px;
-  width: 683px;
-  height: 810px;
-  left: 550px;
-  z-index: -1;
-
-  @media only screen and (max-width: 1199px) and (min-width: 768px) {
-    left: 230px;
-    background-size: 734px 870px;
-    width: 734px;
-    height: 870px;
-  }
-
-  @media only screen and (max-width: 767px)  {
-    left: 0px;
-    opacity: 0.25;
-  }
-  @media only screen and (max-width: 480px)  {
-    left: -70px;
-    opacity: 0.25;
-  }
-}
 
 .textH1 {
   width: 810px;
@@ -64,38 +46,36 @@ padding-bottom: 30px;
     width: 480px;
   }
 
-  @media only screen and (max-width: 767px)  {
+  @media only screen and (max-width: 767px) {
     width: 416px;
     padding-top: 35px;
-    font-family: 'Verdana';
+    font-family: "Verdana";
     font-style: normal;
     font-weight: 700;
     font-size: 35px;
     line-height: 129%;
-    
+
     text-transform: uppercase;
   }
-  @media only screen and (max-width: 480px)  {
+  @media only screen and (max-width: 480px) {
     width: 300px;
     padding-top: 25px;
-    font-family: 'Verdana';
+    font-family: "Verdana";
     font-style: normal;
     font-weight: 700;
     font-size: 25px;
     line-height: 129%;
-    
+
     text-transform: uppercase;
   }
-
 }
 
-.leftBlocktextH1{
-  @media only screen and (max-width: 767px)  {
- display: flex;
-  align-items: center;
-  justify-content: center;
+.leftBlocktextH1 {
+  @media only screen and (max-width: 767px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
- 
 }
 
 .form {
@@ -110,11 +90,11 @@ padding-bottom: 30px;
   flex-direction: column;
   position: relative;
 
-  @media only screen and (max-width: 767px)  {
+  @media only screen and (max-width: 767px) {
     width: 420px;
   }
 
-  @media only screen and (max-width: 480px)  {
+  @media only screen and (max-width: 480px) {
     margin-top: 70px;
     width: 300px;
   }
@@ -136,11 +116,11 @@ padding-bottom: 30px;
 
   transform: rotate(-9.12deg);
   z-index: 1;
-  
-  @media only screen and (max-width: 480px)  {
+
+  @media only screen and (max-width: 480px) {
     font-size: 40px;
     top: -40px;
-     }
+  }
 }
 
 .form_header {
@@ -167,15 +147,14 @@ padding-bottom: 30px;
   font-size: 18px;
   line-height: 23px;
   color: #535353;
-  @media only screen and (max-width: 767px)  {
+  @media only screen and (max-width: 767px) {
     width: 360px;
   }
 
-  @media only screen and (max-width: 480px)  {
+  @media only screen and (max-width: 480px) {
     width: 250px;
   }
 }
-
 
 .form_button {
   margin-top: 25px;
@@ -196,15 +175,14 @@ padding-bottom: 30px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   border-style: none;
-  
 }
 
-.form_button:hover{
+.form_button:hover {
   color: #874b79;
   background: #ffffff;
 }
 
-.formRequiredText{
+.formRequiredText {
   margin-top: 5px;
   color: #874b79;
 }
