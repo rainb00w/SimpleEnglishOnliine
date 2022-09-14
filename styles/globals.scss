@@ -252,6 +252,42 @@ button {
   }
 }
 
+.errorDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 0 20px 0;
+}
+
+.errorBtn{
+  background: #ffd24e;
+  box-shadow: 0px 4px 5px rgba(135, 75, 121, 0.34);
+  padding: 18px 30px 15px 30px;
+  border-style: none;
+  border-radius: 50px;
+  font-family: "Mont";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  /* identical to box height */
+  margin-top: 30px;
+
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #1b1b1b;
+}
+
+.errorBtn:hover {
+  cursor: pointer;
+  background: #ffffff;
+  color: #59204d;
+}
+
+
 .agreement {
   margin-left: auto;
   margin-right: auto;

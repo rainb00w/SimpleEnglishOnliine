@@ -37,7 +37,7 @@ export default function Navigation() {
           </div>
 
           <nav className={s.navBar} ref={navRef}>
-            { (router.pathname === "/privacy_policy" || router.pathname === "/public_offer_agreement" || router.pathname === "/test" ) &&      ( 
+            { (router.pathname === "/privacy_policy" || router.pathname === "/public_offer_agreement" || router.pathname === "/test"  || router.pathname === "/english_for_move" ) &&      ( 
               <Link href="/">
               <a>На головну</a>
             </Link>
