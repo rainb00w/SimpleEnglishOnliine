@@ -25,13 +25,6 @@ export default function Header() {
   return (
     <>
       <div className={s.mainBlock}>
-        {/* <Image
-          src={headerImage}
-          alt="Simple Eglish Logo"
-          layout="fill"
-          objectFit="cover"
-          quality={100}
-        /> */}
 
         <div className="container">
           <div className={s.leftBlock}>

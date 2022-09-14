@@ -10,6 +10,18 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @media screen and (max-width: 1199px) {
+    background-image: url(../public/img/forAdults/headerImage_tablet.webp);
+    height: 815px;
+    max-width: 1200px;
+  
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: url(../public/img/forAdults/headerImage_tablet@2x.webp);
+      }
+    }
+
   @media screen and (min-width: 1200px) {
   background-image: url(../public/img/forAdults/headerImage.webp);
   height: 820px;

@@ -31,7 +31,7 @@ export default function Navigation() {
                 alt="Simple Eglish Logo"
                 width={60}
                 height={60}
-                placeholder="blur" // Optional blur-up while loading
+                // placeholder="blur" // Optional blur-up while loading
               />
             </Link>
           </div>
