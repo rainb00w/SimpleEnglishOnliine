@@ -1,32 +1,26 @@
+import s from "../styles/reviews.module.scss";
+import Image from "next/image";
+import reviewsImage from "../public/img/forAdults/reviews1.webp";
+import React from "react";
+
 export default function Reviews() {
   return (
     <>
-      <div id="reviews">
-        <h2>Нам довіряють</h2>
-        <p>
-          Наша мета – щоб ти заговорив. Ми готуємо до реального життя, а не
-          вправ у підручнику.
-        </p>
-        <ul>
-          <li>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </li>
-          <li>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </li>
-        </ul>
+      <div id="reviews" className={s.reviewsMainDiv}>
+        <Image
+          src={reviewsImage}
+          alt="reviews"
+          width={605}
+          height={977}
+          placeholder="blur" // Optional blur-up while loading
+        />
+        <div className={s.reviewsVideoDiv}>
+          <video controls width="100%">
+            {/* <source src="/video-example.webm" type="video/webm" /> */}
+            <source src="vid/review1.mp4" type="video/mp4" />
+            Sorry, your browser doesn't support videos.
+          </video>
+        </div>
       </div>
     </>
   );

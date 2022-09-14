@@ -49,7 +49,7 @@ export default function Home() {
         <Groups />
         <Bonuses />
         <TestLink />
-        {/* <Reviews /> */}
+         <Reviews /> 
         <SignUpBlock />
         <Faq />
         <Footer />

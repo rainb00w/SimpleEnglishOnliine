@@ -119,6 +119,12 @@
   color: #1b1b1b;
 }
 
+.listItemSign{
+  color: #FFD24E;
+  font-family: "Verdana";
+  font-size: 30px;
+}
+
 .listHeader {
   position: relative;
   font-family: "Verdana";
@@ -139,7 +145,7 @@
 
 .rightListHeader::before {
   content: "";
-  background-image: url("../public/img/forAdults/group2@2x.png");
+  background-image: url("../public/img/forAdults/group2.png");
   position: absolute;
   background-size: 85px 85px;
   display: inline-block;
@@ -156,7 +162,7 @@
 
 .leftListHeader::before {
   content: "";
-  background-image: url("../public/img/forAdults/group1@2x.png");
+  background-image: url("../public/img/forAdults/group1.png");
   position: absolute;
   background-size: 85px 85px;
   display: inline-block;

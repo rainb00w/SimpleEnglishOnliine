@@ -1,0 +1,27 @@
+.reviewsMainDiv {
+  padding: 20px 30px 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  @media only screen and (min-width: 480px) {
+    flex-direction: row;
+  }
+}
+
+.reviewsVideoDiv {
+    
+  margin: 30px 0 30px 0;
+  @media only screen and (max-width: 479px) {
+    max-width: 320px;
+  }
+  @media only screen and (min-width: 480px) {
+    flex: 0 0 50%;
+    margin: 0 0 0 10px;
+    max-width: 300px;
+  }
+  @media only screen and (min-width: 768px) {
+    margin: 0 0 0 10px;
+    max-width: 490px;
+  }
+}
