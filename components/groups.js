@@ -170,10 +170,12 @@ export default function Plans() {
                   </li>
                   <li className={s.listItem}>
                     <Image
+                    className={s.checkBoxImage}
                       src={checkBox}
                       alt="Simple Eglish Logo"
-                      width={25}
-                      height={25}
+                      
+                      // width={25}
+                      // height={25}
                     />
                     <span className={s.listItemText}>
                       Твій власний графік, можливість переносити заняття

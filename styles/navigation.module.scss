@@ -7,6 +7,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media only screen and (min-width: 1200px) {
+    margin: 0 30px 0 30px;
+  }
+
   a {
     color: #ffffff;
     &:hover {
@@ -25,9 +29,8 @@
 
   a {
     @media only screen and (max-width: 1199px) {
-          padding-left: 45px;
+      padding-left: 45px;
     }
-
   }
   @media screen and (min-width: 1200px) {
     :not(:last-child) {
@@ -63,8 +66,6 @@
   //   margin-right: 15px;
   // }
   // }
-
-
 }
 
 .svg_images {
@@ -99,16 +100,16 @@
   color: #1b1b1b;
 }
 
-.form_button_container{
-display: flex;
-align-self: center;
+.form_button_container {
+  display: flex;
+  align-self: center;
 }
 .header_navigation_logo {
   cursor: pointer;
   position: relative;
   margin-left: 10px;
   @media only screen and (max-width: 1199px) and (min-width: 768px) {
-   margin-left: 20px;
+    margin-left: 20px;
   }
   @media only screen and (max-width: 767px) {
     margin-left: 15px;

@@ -46,18 +46,18 @@
   padding: 50px 30px 50px 30px;
   font-size: 24px;
   align-items: center;
-  
+
   p {
     margin-bottom: 15px;
-    font-family: "Verdana";
+    font-family: "Mont";
     font-style: normal;
     font-weight: 400;
-    font-size: 17px;
-    line-height: 23px;
+    font-size: 18px;
+    line-height: 26px;
   }
 }
 
-.score_section_text{
+.score_section_text {
   padding: 20px 20px 20px 20px;
   background-color: #ffffff;
 }
@@ -142,7 +142,7 @@
   border: none;
   border-radius: 5px;
   @media only screen and (max-width: 479px) {
-   margin: 0 20px 0 20px;
+    margin: 0 20px 0 20px;
   }
 }
 
@@ -168,4 +168,12 @@
 
 .button svg {
   margin-right: 5px;
+}
+
+.score_section_text_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }

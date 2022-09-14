@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 import Image from "next/image";
-import logoImg from "../public/logo_rgb@2x.png";
+import logoImg from "../public/logo_rgb@2x.webp";
 import burgerBTN from "../public/burgerBTN.svg";
 import crossBTN from "../public/cross.svg";
 export default function Navigation() {
@@ -37,9 +37,13 @@ export default function Navigation() {
           </div>
 
           <nav className={s.navBar} ref={navRef}>
-            
-            {(router.pathname !== "/test") ? 
-            
+            { (router.pathname === "/privacy_policy" || router.pathname === "/public_offer_agreement" || router.pathname === "/test" ) &&      ( 
+              <Link href="/">
+              <a>На головну</a>
+            </Link>
+            )}
+
+            {(router.pathname === "/") && 
             ( 
               <>
               
@@ -81,12 +85,6 @@ export default function Navigation() {
               
               </>
               
-            )
-            :
-            ( 
-              <Link href="/">
-              <a>На головну</a>
-            </Link>
             )
             }
             {toggled && (

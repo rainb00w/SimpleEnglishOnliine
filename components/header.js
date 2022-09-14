@@ -1,6 +1,8 @@
 import s from "../styles/header.module.scss";
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import Image from "next/image";
+import headerImage from "../public/img/forAdults/headerImage@2x.png";
 
 export default function Header() {
   const formik = useFormik({
@@ -23,11 +25,22 @@ export default function Header() {
   return (
     <>
       <div className={s.mainBlock}>
+        {/* <Image
+          src={headerImage}
+          alt="Simple Eglish Logo"
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+        /> */}
+
         <div className="container">
           <div className={s.leftBlock}>
             <div className={s.leftBlocktextH1}>
               <h1 className={s.textH1}>
-                <span className={s.color} lang="en">Simple English</span> - <br />
+                <span className={s.color} lang="en">
+                  Simple English
+                </span>{" "}
+                - <br />
                 заговорити англійською просто!
               </h1>
             </div>
@@ -48,7 +61,9 @@ export default function Header() {
                   value={formik.values.firstName}
                 />
                 {formik.touched.firstName && formik.errors.firstName ? (
-                  <div className={s.formRequiredText}>{formik.errors.firstName}</div>
+                  <div className={s.formRequiredText}>
+                    {formik.errors.firstName}
+                  </div>
                 ) : null}
 
                 <input
@@ -62,7 +77,9 @@ export default function Header() {
                   value={formik.values.email}
                 />
                 {formik.touched.email && formik.errors.email ? (
-                  <div className={s.formRequiredText}>{formik.errors.email}</div>
+                  <div className={s.formRequiredText}>
+                    {formik.errors.email}
+                  </div>
                 ) : null}
 
                 <input

@@ -7,6 +7,7 @@ $cubic: cubic-bezier(0.4, 0, 0.2, 1);
 
 @font-face {
   font-family: "Verdana";
+  font-display: swap;
   src: url("../fonts/Verdana/Verdana.ttf");
   font-weight: 400;
   font-style: normal;
@@ -14,6 +15,7 @@ $cubic: cubic-bezier(0.4, 0, 0.2, 1);
 
 @font-face {
   font-family: "Verdana";
+  font-display: swap;
   src: url("../fonts/Verdana/Verdana-Bold.ttf");
   font-weight: 700;
   font-style: normal;
@@ -21,6 +23,7 @@ $cubic: cubic-bezier(0.4, 0, 0.2, 1);
 
 @font-face {
   font-family: "appleberry";
+  font-display: swap;
   src: url("../fonts/APPLEBERRY/APPLEBERRY.TTF");
   font-weight: 400;
   font-style: normal;
@@ -28,6 +31,7 @@ $cubic: cubic-bezier(0.4, 0, 0.2, 1);
 
 @font-face {
   font-family: "Mont";
+  font-display: swap;
   src: url("../fonts/Mont/Mont-Regular.ttf");
   font-weight: 400;
   font-style: normal;
@@ -35,6 +39,7 @@ $cubic: cubic-bezier(0.4, 0, 0.2, 1);
 
 @font-face {
   font-family: "Mont";
+  font-display: swap;
   src: url("../fonts/Mont/Mont-Bold.ttf");
   font-weight: 700;
   font-style: normal;
@@ -42,6 +47,7 @@ $cubic: cubic-bezier(0.4, 0, 0.2, 1);
 
 @font-face {
   font-family: "Mont";
+  font-display: swap;
   src: url("../fonts/Mont/Mont-ExtraLight.ttf");
   font-weight: 200;
   font-style: normal;
@@ -49,6 +55,7 @@ $cubic: cubic-bezier(0.4, 0, 0.2, 1);
 
 @font-face {
   font-family: "Mont";
+  font-display: swap;
   src: url("../fonts/Mont/Mont-Light.ttf");
   font-weight: 300;
   font-style: normal;
@@ -56,6 +63,7 @@ $cubic: cubic-bezier(0.4, 0, 0.2, 1);
 
 @font-face {
   font-family: "Mont";
+  font-display: swap;
   src: url("../fonts/Mont/Mont-Thin.ttf");
   font-weight: 100;
   font-style: normal;
@@ -241,5 +249,15 @@ button {
     position: absolute;
     top: 20px;
     right: 0;
+  }
+}
+
+.agreement {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  padding: 50px 50px 50px 50px;
+  p {
+    margin: 10px 0 0 0 ;
   }
 }

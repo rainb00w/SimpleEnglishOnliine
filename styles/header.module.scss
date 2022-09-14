@@ -10,9 +10,18 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  background-image: url(../public/img/forAdults/headerImage@2x.png);
+  @media screen and (min-width: 1200px) {
+  background-image: url(../public/img/forAdults/headerImage.webp);
   height: 820px;
   max-width: 1600px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url(../public/img/forAdults/headerImage@2x.webp);
+    }
+  }
+
 }
 
 .leftBlock {
