@@ -48,32 +48,29 @@ export default function Header() {
                   id="firstName"
                   name="firstName"
                   type="text"
-                  placeholder="Ім’я..."
+                  placeholder={formik.touched.firstName && formik.errors.firstName ? (
+                  "Ім’я ( необхідне поле )"
+                ) : ("Ім’я..."                )}
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   value={formik.values.firstName}
                 />
-                {formik.touched.firstName && formik.errors.firstName ? (
-                  <div className={s.formRequiredText}>
-                    {formik.errors.firstName}
-                  </div>
-                ) : null}
+              
+
 
                 <input
                   className={s.form_input}
                   id="email"
                   name="email"
                   type="email"
-                  placeholder="Email..."
+                  placeholder={formik.touched.email && formik.errors.email ? (
+                    "Email ( необхідне поле )"
+                  ) : ("Email...")}
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   value={formik.values.email}
                 />
-                {formik.touched.email && formik.errors.email ? (
-                  <div className={s.formRequiredText}>
-                    {formik.errors.email}
-                  </div>
-                ) : null}
+      
 
                 <input
                   className={s.form_input}

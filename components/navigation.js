@@ -59,9 +59,9 @@ export default function Navigation() {
             <Link href="/test">
               <a>Тест </a>
             </Link>
-            {/* <Link href="#reviews">
+            <Link href="#reviews">
               <a> Відгуки</a>
-            </Link> */}
+            </Link>
             <Link href="#faq">
               <a>FAQ </a>
             </Link>
