@@ -11,29 +11,37 @@
   background-size: cover;
 
   @media screen and (max-width: 1199px) {
-    background-image: url(../public/img/forAdults/headerImage_tablet.webp);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../public/img/forAdults/headerImage_tablet.webp);
+    background-position: 75% 25%;
     height: 815px;
     max-width: 1200px;
-  
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-          background-image: url(../public/img/forAdults/headerImage_tablet@2x.webp);
-      }
-    }
-
-  @media screen and (min-width: 1200px) {
-  background-image: url(../public/img/forAdults/headerImage.webp);
-  height: 820px;
-  max-width: 1600px;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-        background-image: url(../public/img/forAdults/headerImage@2x.webp);
+      background-image: linear-gradient(
+          rgba(234, 234, 234, 0.747),
+          rgba(234, 234, 234, 0.747)
+        ),
+        url(../public/img/forAdults/headerImage_tablet@2x.webp);
     }
   }
 
+  @media screen and (min-width: 1200px) {
+    background-image: url(../public/img/forAdults/headerImage.webp);
+    height: 820px;
+    max-width: 1600px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../public/img/forAdults/headerImage@2x.webp);
+    }
+  }
 }
 
 .leftBlock {
@@ -51,7 +59,6 @@
     padding-bottom: 30px;
   }
 }
-
 
 .textH1 {
   width: 810px;
