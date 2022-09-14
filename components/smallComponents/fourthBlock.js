@@ -49,7 +49,7 @@ export function FourthBlock(props) {
         </li>
       </ul>
 
-      <Link href="#">
+      <Link href="https://docs.google.com/forms/d/e/1FAIpQLSepzomXG6saX1_V1Td8YzudY5yFoDMOb2eNEfELYgL1-_iwsg/viewform">
         <a>
           <button className={s.footerBTN2}>Стати нашим викладачем</button>{" "}
         </a>

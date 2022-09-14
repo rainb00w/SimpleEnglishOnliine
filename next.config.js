@@ -7,13 +7,13 @@ const nextConfig = {
 module.exports = nextConfig
 
 
-// module.exports = {
-//   experimental: {
-//     images: {
-//       unoptimized: true,
-//     },
-//   },
-// }
+module.exports = {
+  experimental: {
+    images: {
+      unoptimized: true,
+    },
+  },
+}
 
 // module.exports = {
 //   webpack(config) {
