@@ -26,14 +26,6 @@ export default function About() {
           <ul className={s.aboutList}>
             <li className={s.aboutListItem}>
             <img src="img/forAdults/1@2x.png" alt="Logo" className={s.about_images} />
-            {/* "img/forAdults/1@2x.png" */}
-              {/* <Image
-                src={firstImage}
-                alt="Simple Eglish Logo"
-                width={177}
-                height={177}
-                placeholder="blur" // Optional blur-up while loading
-              /> */}
               <span className={s.abouListText}>Інтерактивна платформа</span>
             </li>
             <li className={s.aboutListItem}>
