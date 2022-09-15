@@ -18,6 +18,9 @@
   @media only screen and (max-width: 767px) {
     margin: 20px 50px 20px 50px;
   }
+  @media only screen and (max-width: 767px) {
+    margin: 20px 15px 20px 15px;
+  }
 }
 
 .header_text {
@@ -51,12 +54,14 @@
   align-items: center;
 
   p {
-    margin-bottom: 15px;
     font-family: "Mont";
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 26px;
+  }
+  @media only screen and (max-width: 479px) {
+    padding: 20px 15px 20px 15px;
   }
 }
 
@@ -95,9 +100,12 @@
   background-color: #fff2ea;
   @media only screen and (max-width: 767px) {
     font-size: 25px;
-    padding: 50px 10px 50px 10px;
+    padding: 50px 50px 50px 50px;
   }
   @media only screen and (max-width: 479px) {
+    padding: 50px 20px 50px 20px;
+    flex: auto;
+    height: 200px;
     text-align: center;
     font-size: 22px;
   }
@@ -145,8 +153,31 @@
   border: none;
   border-radius: 5px;
   @media only screen and (max-width: 479px) {
-    margin: 0 20px 0 20px;
+    margin: 20px 20px 0 20px;
+    padding: 5px 10px 5px 10px;
   }
+}
+
+.buttonRepeat {
+  margin-top: 30px;
+  font-family: "Mont";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 23px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  background: #874b79;
+  box-shadow: 0px 4px 5px rgba(135, 75, 121, 0.34);
+  border-radius: 50px;
+  border: none;
+  padding: 15px 15px;
 }
 
 .button:not(:last-child) {
@@ -179,4 +210,43 @@
   justify-content: center;
   flex-direction: column;
   text-align: center;
+}
+
+.score_section_smile_size {
+  font-size: 90px;
+}
+
+.score_section_score_header {
+  text-align: center;
+  margin: 10px 0 15px 0;
+  max-width: 300px;
+  background-color: #f6deba;
+  padding: 10px 15px 10px 15px;
+  border-radius: 10px;
+}
+
+.score_section_score_header_H {
+  font-family: "Verdana";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 36px;
+  text-align: center;
+  color: #874b79;
+}
+
+.score_section_score_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.score_section_score_bottom_container {
+  font-family: "Mont";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 20px 0 0 0;
 }

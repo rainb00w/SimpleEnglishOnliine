@@ -19,10 +19,9 @@ export default function Bonuses() {
           <div>
             <div className={s.headerContainer}>
               <h2 className={s.bonusesH2}>
-                Бонуси і плюшки
+                Бонуси і плюшки <br></br>
                 <span className={s.bonusesH2Color}>
-                  {" "}
-                  від <span lang="en">Simple English</span>
+                   від <span lang="en">Simple English</span>
                 </span>
               </h2>
 
@@ -108,8 +107,8 @@ export default function Bonuses() {
               </li>
               <li>
                 <span className={s.listText}>
-                  Запроси друга/колегу в <span lang="en">Simple English</span> і
-                  <b>отримай бонус 500 грн,</b>
+                  Запроси друга/колегу в <span lang="en">Simple English</span>
+                  <b> і отримай бонус 500 грн,</b>
                   який ти можеш використати на навчання у школі. При реєстрації
                   на навчання друг має зазначити твоє імʼя і повідомити про
                   рекомендацію. Все!
@@ -119,7 +118,8 @@ export default function Bonuses() {
                 <span className={s.listText}>
                   Щомісячний <b>розіграш 3 уроків</b> серед наших фоловерів, які
                   відмічають <span lang="en">Simple English</span> на своїй
-                  сторінці. (Активне посилання на сторінку )
+                  сторінці. 
+                  <a href="https://instagram.com/simple.english.online?igshid=YmMyMTA2M2Y="> Instagram</a>
                 </span>
               </li>
             </ul>

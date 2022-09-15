@@ -66,6 +66,9 @@
 .aboutHeader {
   width: 380px;
   text-align: center;
+  @media screen and (max-width: 480px) {
+    max-width: 300px;
+  }
 }
 
 .aboutSchool {
@@ -84,7 +87,7 @@
 }
 
 .aboutSimpleEnglish {
-  font-family: "Verdana", sans-serif;
+  font-family: "appleberry", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 45px;
@@ -98,7 +101,7 @@
 }
 
 .flexCentered {
-  margin-top: 120px;
+  margin-top: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;

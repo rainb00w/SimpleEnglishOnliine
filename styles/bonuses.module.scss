@@ -12,7 +12,11 @@
   }
 
   @media only screen and (max-width: 767px) {
-    margin-top: 40px;
+    margin-top: 30px;
+  }
+
+  @media only screen and (max-width: 479px) {
+
   }
 }
 
@@ -44,7 +48,6 @@
 }
 
 .bonusesH2Color {
-  font-family: "Verdana";
   font-weight: 700;
   font-size: 47px;
   color: #874b79;
