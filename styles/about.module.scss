@@ -142,8 +142,7 @@
   line-height: 38px;
   }
   @media only screen and (max-width: 479px) {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0;
     max-width: 290px;
     height: 140px;
     font-size: 20px;
@@ -153,6 +152,9 @@
 
 .abouListText {
   margin-left: 43px;
+  @media only screen and (max-width: 479px) {
+    margin-left: 15px;
+  }
 }
 
 .aboutList {
@@ -182,4 +184,8 @@
 
 .about_images{
   height: 100px;
+  @media only screen and (max-width: 479px) {
+    height: 80px;
+    margin: 0 0 0 15px;
+  }
 }

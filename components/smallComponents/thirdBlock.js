@@ -6,14 +6,14 @@ export function ThirdBlock() {
   return (
     <div className={s.footerThirdBlock}>
       <div className={s.footerThirdBlockLinks}>
-        <Link href="#">
-          <a> Пробний урок Онлайн</a>
+        <Link href="#"  >
+          <a className={s.footerThirdBlockLinksItem}> Пробний урок Онлайн</a>
         </Link>
-        <Link href="#">
-          <a> Подарувати сертифікат</a>
+        <Link href="#" >
+          <a className={s.footerThirdBlockLinksItem}> Подарувати сертифікат</a>
         </Link>
-        <Link href="#">
-          <a> Навчальна розсилка</a>
+        <Link href="#" >
+          <a className={s.footerThirdBlockLinksItem}> Навчальна розсилка</a>
         </Link>
       </div>
 
