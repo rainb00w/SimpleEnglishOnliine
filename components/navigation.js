@@ -60,7 +60,7 @@ export default function Navigation() {
               <a>Тест </a>
             </Link>
             <Link href="#reviews">
-              <a> Відгуки</a>
+              <a>Відгуки</a>
             </Link>
             <Link href="#faq">
               <a>FAQ </a>
@@ -77,9 +77,6 @@ export default function Navigation() {
                 alt="menu button"
                 width={34}
                 height={21}
-
-                // blurDataURL="data:..." automatically provided
-                // placeholder="blur" // Optional blur-up while loading
               />
             </button>
               
