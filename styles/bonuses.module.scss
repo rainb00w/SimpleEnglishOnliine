@@ -1,6 +1,6 @@
 .bonusesFlex {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 60px;
+  margin-bottom: 60px;
   // height: 1050px;
   display: flex;
   justify-content: space-around;
@@ -78,17 +78,21 @@
 
 .ul {
   width: 450px;
-  margin-left: 50px;
   & li:not(:last-child) {
     margin-bottom: 40px;
   }
+  @media only screen and (max-width: 1199px) {
+    margin-top: 40px;
+  }
+
   @media only screen and (max-width: 767px) {
-    width: 250px;
+    width: 400px;
   }
 
   @media only screen and (max-width: 479px) {
     margin-left: 20px;
     margin-right: 10px;
+    max-width: 300px;
   }
 }
 
@@ -100,6 +104,10 @@
   font-size: 25px;
   line-height: 32px;
   color: #1b1b1b;
+  @media only screen and (max-width: 479px) {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 
 .listText {
@@ -133,30 +141,28 @@
 }
 
 .bonusesRightContainer {
-  display: flex;
   @media only screen and (max-width: 1199px) {
+    display: flex;
     justify-content: center;
-    margin-top: 50px;
+    // margin-top: 50px;
   }
 }
 
-.img2 {
-  margin-top: 25px;
+
+.bonuses_images{
+  height: 70px;
+  @media only screen and (max-width: 767px) {
+    height: 60px;
+  }
+
   @media only screen and (max-width: 479px) {
-    margin-top: 55px;
+    height: 45px;
   }
 }
 
-.img3 {
-  margin-top: 18px;
-  @media only screen and (max-width: 479px) {
-    margin-top: 40px;
-  }
-}
 
-.img4 {
-  margin-top: 285px;
-  @media only screen and (max-width: 479px) {
-    margin-top: 260px;
-  }
+.grid_container{
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-auto-rows: minmax(auto, auto);
 }
