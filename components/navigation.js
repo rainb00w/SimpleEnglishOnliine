@@ -37,6 +37,7 @@ export default function Navigation() {
           </div>
 
           <nav className={s.navBar} ref={navRef}>
+
             { (router.pathname === "/privacy_policy" || router.pathname === "/public_offer_agreement" || router.pathname === "/test"  || router.pathname === "/english_for_move" ) &&      ( 
               <Link href="/">
               <a>На головну</a>
@@ -130,9 +131,6 @@ export default function Navigation() {
                   alt="menu button"
                   width={34}
                   height={21}
-
-                  // blurDataURL="data:..." automatically provided
-                  // placeholder="blur" // Optional blur-up while loading
                 />
               </button>
             </div>
