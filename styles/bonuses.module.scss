@@ -16,7 +16,6 @@
   }
 
   @media only screen and (max-width: 479px) {
-
   }
 }
 
@@ -96,7 +95,6 @@
   }
 }
 
-
 .li {
   font-family: "Mont";
   font-style: normal;
@@ -148,8 +146,7 @@
   }
 }
 
-
-.bonuses_images{
+.bonuses_images {
   height: 70px;
   @media only screen and (max-width: 767px) {
     height: 60px;
@@ -160,9 +157,42 @@
   }
 }
 
-
-.grid_container{
+.grid_container {
   display: grid;
   grid-template-columns: 20% 80%;
   grid-auto-rows: minmax(auto, auto);
+}
+.instagramBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Mont";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #1b1b1b;
+
+  border: 2px solid #874b79;
+  border-radius: 50px;
+  margin: 20px 0 0 0;
+  padding: 10px 15px 10px 15px;
+  @media only screen and (max-width: 767px) {
+    font-size: 14px;
+  }
+  @media only screen and (max-width: 479px) {
+    font-size: 12px;
+    flex-direction: column;
+    padding: 10px 15px 5px 15px;
+  }
+}
+
+.instagramIcon{
+  margin: 0 0 5px 5px;
+  @media only screen and (max-width: 479px) {
+    margin: 5px 0 0 0;
+  }
 }

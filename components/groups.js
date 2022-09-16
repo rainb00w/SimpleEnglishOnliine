@@ -1,5 +1,14 @@
 import s from "../styles/groups.module.scss";
 import Link from "next/link";
+import { Bird } from "./smallComponents/bird";
+
+export const Button = () => {
+  return (
+    <button>
+      <LeftArrow />
+    </button>
+  );
+};
 
 export default function Plans() {
   return (
@@ -18,62 +27,62 @@ export default function Plans() {
                 </h3>
                 <ul>
                   <li className={s.listItem}>
-                    <span className={s.listItemSign}>✔</span>
+                    <Bird className={s.iconSize} />
                     <span className={s.listItemText}>
                       14 годин розмовної практики
                     </span>
                   </li>
                   <li className={s.listItem}>
-                    <span className={s.listItemSign}>✔</span>
+                    <Bird className={s.iconSize} />
                     <span className={s.listItemText}>
                       Маленька група до 4 студентів, часу точно вистачить на
                       всіх
                     </span>
                   </li>
                   <li className={s.listItem}>
-                    <span className={s.listItemSign}>✔</span>
+                    <Bird className={s.iconSize} />
                     <span className={s.listItemText}>
                       Дисципліна завдяки стабільному графіку
                     </span>
                   </li>
                   <li className={s.listItem}>
-                    <span className={s.listItemSign}>✔</span>
+                    <Bird className={s.iconSize} />
                     <span className={s.listItemText}>
                       Group mates за схожими інтересами та рівнем знань
                     </span>
                   </li>
                   <li className={s.listItem}>
-                    <span className={s.listItemSign}>✔</span>
+                    <Bird className={s.iconSize} />
                     <span className={s.listItemText}>
                       Активні дискусії і розвиток soft skills
                     </span>
                   </li>
                   <li className={s.listItem}>
-                    <span className={s.listItemSign}>✔</span>
+                    <Bird className={s.iconSize} />
                     <span className={s.listItemText}>
                       Безкоштовний Speaking Club
                     </span>
                   </li>
                   <li className={s.listItem}>
-                    <span className={s.listItemSign}>✔</span>
+                    <Bird className={s.iconSize} />
                     <span className={s.listItemText}>
                       Цікаві завдання від викладача
                     </span>
                   </li>
                   <li className={s.listItem}>
-                    <span className={s.listItemSign}>✔</span>
+                    <Bird className={s.iconSize} />
                     <span className={s.listItemText}>
                       Вивчення мови легко і ефективно
                     </span>
                   </li>
                   <li className={s.listItem}>
-                    <span className={s.listItemSign}>✔</span>
+                    <Bird className={s.iconSize} />
                     <span className={s.listItemText}>
                       Контроль результату кожні 2 місяці
                     </span>
                   </li>
                   <li className={s.listItem}>
-                    <span className={s.listItemSign}>✔</span>
+                    <Bird className={s.iconSize} />
                     <span className={s.listItemText}>
                       Підтримка менеджера 24/7
                     </span>
@@ -96,45 +105,46 @@ export default function Plans() {
                 </h3>
                 <ul>
                   <li className={s.listItem}>
-                    <span className={s.listItemSign}>✔</span>
+                    <Bird className={s.iconSize} />
                     <span className={s.listItemText}>
                       14 годин розмовної практики
                     </span>
                   </li>
                   <li className={s.listItem}>
-                    <span className={s.listItemSign}>✔</span>
+                    <Bird className={s.iconSize} />
                     <span className={s.listItemText}>Персональна програма</span>
                   </li>
                   <li className={s.listItem}>
-                  <span className={s.listItemSign}>✔</span>
+                    <Bird className={s.iconSize} />
                     <span className={s.listItemText}>
-                      Твій власний графік, можливість переносити заняття unlimited
+                      Твій власний графік, можливість переносити заняття
+                      unlimited
                     </span>
                   </li>
                   <li className={s.listItem}>
-                    <span className={s.listItemSign}>✔</span>
+                    <Bird className={s.iconSize} />
                     <span className={s.listItemText}>Лише цікаві теми</span>
                   </li>
                   <li className={s.listItem}>
-                    <span className={s.listItemSign}>✔</span>
+                    <Bird className={s.iconSize} />
                     <span className={s.listItemText}>
                       Безкоштовний Speaking Club
                     </span>
                   </li>
                   <li className={s.listItem}>
-                    <span className={s.listItemSign}>✔</span>
+                    <Bird className={s.iconSize} />
                     <span className={s.listItemText}>
                       Швидке досягнення цілі
                     </span>{" "}
                   </li>
                   <li className={s.listItem}>
-                    <span className={s.listItemSign}>✔</span>
+                    <Bird className={s.iconSize} />
                     <span className={s.listItemText}>
                       Контроль результату кожні 2 місяці
                     </span>
                   </li>
                   <li className={s.listItem}>
-                    <span className={s.listItemSign}>✔</span>
+                    <Bird className={s.iconSize} />
                     <span className={s.listItemText}>
                       Підтримка менеджера 24/7
                     </span>

@@ -15,7 +15,11 @@ export default function Reviews() {
           placeholder="blur" // Optional blur-up while loading
         />
         <div className={s.reviewsVideoDiv}>
-          <video  width="100%" preload="metadata" poster="img/forAdults/video_preview.webp">
+          <video
+            width="100%"
+            preload="metadata"
+            poster="img/forAdults/video_preview.webp"
+          >
             {/* <source src="/video-example.webm" type="video/webm" /> */}
             <source src="vid/review1.mp4" type="video/mp4" />
             Sorry, your browser doesn't support videos.
