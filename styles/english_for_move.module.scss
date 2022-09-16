@@ -1,0 +1,435 @@
+.plansContainer {
+    background-color: #874b79;
+    padding-bottom: 100px;
+    // height: 1000px;
+    @media only screen and (max-width: 1199px) and (min-width: 768px) {
+    }
+  }
+  
+  .flexContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+  
+    @media only screen and (max-width: 1199px) {
+      flex-direction: column;
+      .listBoxes:first-child {
+        margin-bottom: 100px;
+      }
+    }
+  }
+  
+  .listFlex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .plansMainText {
+    padding-top: 67px;
+    font-family: "appleberry";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 65px;
+    line-height: 75px;
+    /* identical to box height */
+  
+    text-align: center;
+    color: #ffffff;
+    @media only screen and (max-width: 1199px) {
+      max-width: 470px;
+      font-size: 65px;
+      line-height: 75px;
+    }
+  
+    @media only screen and (max-width: 767px) {
+      max-width: 470px;
+      
+    }
+    @media only screen and (max-width: 479px) {
+      padding-top: 40px;
+      max-width: 300px;
+      font-size: 40px;
+      line-height: 45px;
+    }
+  }
+  
+  .plansMainTextContainer {
+    @media only screen and (max-width: 1199px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  
+  .priceAndBtn {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .listBoxes {
+    width: 571px;
+    height: 730px;
+    background: #ffffff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    @media only screen and (max-width: 767px) {
+      width: 420px;
+      height: 690px;
+    }
+    @media only screen and (max-width: 479px) {
+      width: 300px;
+      height: 690px;
+    }
+  }
+  
+  .listItem {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin: 15px 0 0 40px;
+    font-family: "Mont";
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: left;
+  
+    @media only screen and (max-width: 767px) {
+  
+      margin-left: 25px;
+      margin-right: 15px;
+      font-weight: 200;
+      font-size: 17px;
+      line-height: 17px;
+    }
+    @media only screen and (max-width: 479px) {
+    
+      margin-left: 15px;
+      margin-right: 15px;
+      font-size: 15px;
+      line-height: 15px;
+    }
+  
+    color: #1b1b1b;
+  }
+  
+  
+  
+  .listHeader {
+    position: relative;
+    font-family: "Verdana";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 40px;
+  
+    color: #1b1b1b;
+    @media only screen and (max-width: 767px) {
+      font-size: 26px;
+      line-height: 36px;
+    }
+  }
+  
+  .rightListHeader::before {
+    content: "";
+    background-image: url("../public/img/forAdults/group2.png");
+    position: absolute;
+    background-size: 85px 85px;
+    display: inline-block;
+    width: 85px;
+    height: 85px;
+  
+    left: 100px;
+    top: -95px;
+    z-index: 1;
+    @media only screen and (max-width: 479px) {
+      left: 90px;
+    }
+  }
+  
+  .leftListHeader::before {
+    content: "";
+    background-image: url("../public/img/forAdults/group1.png");
+    position: absolute;
+    background-size: 85px 85px;
+    display: inline-block;
+    width: 85px;
+    height: 85px;
+  
+    left: 40px;
+    top: -95px;
+    z-index: 1;
+    @media only screen and (max-width: 479px) {
+      left: 20px;
+    }
+  }
+  
+  .price {
+    text-align: center;
+    font-family: "Mont";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 51px;
+    padding-bottom: 20px;
+  
+    color: #59204d;
+    @media screen and (max-width: 479px) {
+      margin-top: 10px;
+    }
+  }
+  
+  .listItemText {
+    margin-left: 10px;
+  }
+  
+  .form_button {
+    background: #ffd24e;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.15);
+    border-radius: 50px;
+    padding: 20px 20px 15px 20px;
+    width: 370px;
+    border-style: none;
+    font-family: "Mont";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 23px;
+    /* identical to box height */
+  
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  
+    color: #1b1b1b;
+    @media screen and (max-width: 479px) {
+      width: 280px;
+      font-size: 18px;
+      line-height: 20px;
+    }
+  }
+  
+  .form_button:hover{
+    cursor: pointer;
+    color: #ffffff;
+    background: #874b79;
+  }
+  
+  .checkBoxImage{
+    width: 45px;
+    height: 45px;
+  }
+  
+  .iconSize{
+    width: 30px;
+    height: 30px;
+  }
+
+  .bonusesFlex {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    // height: 1050px;
+    display: flex;
+    justify-content: space-around;
+  
+    @media only screen and (max-width: 1199px) {
+      flex-direction: column;
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+  
+    @media only screen and (max-width: 767px) {
+      margin-top: 30px;
+    }
+  
+    @media only screen and (max-width: 479px) {
+    }
+  }
+  
+  .bonusesH2 {
+    font-family: "appleberry";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 65px;
+    line-height: 75px;
+    color: #1b1b1b;
+    position: relative;
+    @media only screen and (max-width: 1199px) {
+      max-width: 500px;
+    }
+  
+    @media only screen and (max-width: 767px) {
+      max-width: 400px;
+      font-weight: 500;
+      font-size: 50px;
+      line-height: 58px;
+    }
+    @media only screen and (max-width: 479px) {
+      padding: 0px 15px 0px 15px;
+      font-weight: 700;
+      font-size: 35px;
+      line-height: 30px;
+      margin-bottom: 20px;
+    }
+  }
+  
+  .bonusesH2Color {
+    font-weight: 700;
+    font-size: 47px;
+    color: #874b79;
+    @media only screen and (max-width: 767px) {
+      max-width: 400px;
+      font-weight: 700;
+      font-size: 35px;
+      line-height: 43px;
+    }
+    @media only screen and (max-width: 479px) {
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 30px;
+    }
+  }
+  
+  .headerContainer {
+    width: 580px;
+    @media only screen and (max-width: 1199px) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  
+  .ul {
+    width: 450px;
+    & li:not(:last-child) {
+      margin-bottom: 40px;
+    }
+    @media only screen and (max-width: 1199px) {
+      margin-top: 40px;
+    }
+  
+    @media only screen and (max-width: 767px) {
+      width: 400px;
+    }
+  
+    @media only screen and (max-width: 479px) {
+      margin-left: 20px;
+      margin-right: 10px;
+      max-width: 300px;
+    }
+  }
+  
+  .li {
+    font-family: "Mont";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 32px;
+    color: #1b1b1b;
+    @media only screen and (max-width: 479px) {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+  
+  .listText {
+    font-family: "Mont";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 32px;
+    margin-bottom: 20px;
+  
+    color: #1b1b1b;
+  
+    @media only screen and (max-width: 767px) {
+      font-size: 18px;
+      line-height: 23px;
+    }
+    @media only screen and (max-width: 479px) {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+  
+  .bonusesImages {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    @media only screen and (max-width: 479px) {
+      width: 60px;
+      margin-left: 20px;
+    }
+  }
+  
+  .bonusesRightContainer {
+    @media only screen and (max-width: 1199px) {
+      display: flex;
+      justify-content: center;
+      // margin-top: 50px;
+    }
+  }
+  
+  .bonuses_images {
+    height: 70px;
+    @media only screen and (max-width: 767px) {
+      height: 60px;
+    }
+  
+    @media only screen and (max-width: 479px) {
+      height: 45px;
+    }
+  }
+  
+  .grid_container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-auto-rows: minmax(auto, auto);
+  }
+  .instagramBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Mont";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  
+    color: #1b1b1b;
+  
+    border: 2px solid #874b79;
+    border-radius: 50px;
+    margin: 20px 0 0 0;
+    padding: 10px 15px 10px 15px;
+    @media only screen and (max-width: 767px) {
+      font-size: 14px;
+    }
+    @media only screen and (max-width: 479px) {
+      font-size: 12px;
+      padding: 10px 15px 5px 15px;
+    }
+  }
+  
+  .instagramIcon{
+    margin: 0 0 5px 5px;
+    @media only screen and (max-width: 479px) {
+      margin: 0 0 10px 0;
+    }
+  }

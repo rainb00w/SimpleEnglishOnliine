@@ -17,9 +17,20 @@ export default function Header() {
         .required("Необхідне поле"),
       email: Yup.string().email("Неправильна почта").required("Необхідне поле"),
     }),
-    onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
-    },
+
+
+
+    // onSubmit: (values) => {
+    //   const messageBody = JSON.stringify(values, null, 2)
+    //   let response =  fetch('sendMail', {
+    //     method: 'POST',
+    //     body: messageBody
+    //   });
+    //   alert(messageBody);
+    //   setSubmitting(false);
+    // },
+
+
   });
 
   return (

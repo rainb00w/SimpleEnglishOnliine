@@ -2,13 +2,7 @@ import s from "../styles/groups.module.scss";
 import Link from "next/link";
 import { Bird } from "./smallComponents/bird";
 
-export const Button = () => {
-  return (
-    <button>
-      <LeftArrow />
-    </button>
-  );
-};
+
 
 export default function Plans() {
   return (
