@@ -16,6 +16,7 @@ export default function Reviews() {
         />
         <div className={s.reviewsVideoDiv}>
           <video
+            controls
             width="100%"
             preload="metadata"
             poster="img/forAdults/video_preview.webp"
