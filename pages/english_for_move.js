@@ -14,10 +14,7 @@ export default function EnglishForMoveCourse() {
   return (
     <>
       <Navigation />
-      Англійська для переїзду 
-      КУПИТИ КУРС 
-      Програма курсу 
-      Вступний вебінар “Як
+      Англійська для переїзду КУПИТИ КУРС Програма курсу Вступний вебінар “Як
       подолати мовний барʼєр” Після вебінару ти: позбавився страху говорити
       (навіть з новим королем Британії) розумієш свої помилки у вивченні
       англійської знаєш чітку систему освоєння мови Модуль 1.Знайомство з новими
@@ -26,8 +23,19 @@ export default function EnglishForMoveCourse() {
       В банку Модуль 8. В еміграційному центрі + фрази для біженців Модуль 9. В
       ресторані/кафе Модуль 10. Як записатися на безкоштовні курси закордоном
       Для кого цей курс? складові
-      <>
-        <div className="container">
+      <p>
+      <form method="POST" accept-charset="utf-8" action="https://www.liqpay.ua/api/3/checkout">
+  <input type="hidden" name="data" value="eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXkiLCJhbW91bnQiOjUsImN1cnJlbmN5IjoiVUFIIiwiZGVzY3JpcHRpb24iOiLQnNGW0Lkg0YLQvtCy0LDRgCIsInB1YmxpY19rZXkiOiJzYW5kYm94X2k5MjIyOTUyNzQ2NCIsImxhbmd1YWdlIjoicnUifQ==" />
+  <input type="hidden" name="signature" value="Z1D0QbnNVbItKr6BBVoXYpxl7Ds=" />
+  <button >
+    <img src="https://static.liqpay.ua/buttons/logo-small.png" name="btn_text"
+      />
+    <span >Сплатити 5 UAH</span>
+  </button>
+</form>
+      </p>
+   
+      {/* <div className="container">
           <div className={s.bonusesFlex} id="bonuses">
             <div>
               <div className={s.headerContainer}>
@@ -227,8 +235,7 @@ export default function EnglishForMoveCourse() {
               </div>
             </div>
           </div>
-        </div>
-      </>
+        </div> */}
       <Footer />
     </>
   );
