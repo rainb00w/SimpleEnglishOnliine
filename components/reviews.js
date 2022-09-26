@@ -54,8 +54,8 @@ export default function Reviews() {
               </video>
             </div>
           </SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <div class="swiper-pagination"  slot="pagination"></div>
+          {/* <SwiperSlide>Slide 3</SwiperSlide>
+          <div class="swiper-pagination"  slot="pagination"></div> */}
         </Swiper>
       </div>
       </div>
