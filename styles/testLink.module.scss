@@ -15,12 +15,12 @@
   font-family: "appleberry";
   font-style: normal;
   font-weight: 700;
-  font-size: 35px;
+  font-size: 45px;
   line-height: 42.54px;
 
   color: #1b1b1b;
   @media only screen and (max-width: 479px) {
-    font-size: 25px;
+    font-size: 30px;
   }
 
 }
@@ -29,10 +29,13 @@
   font-family: "appleberry";
   font-style: normal;
   font-weight: 500;
-  font-size: 65px;
+  font-size: 55px;
   line-height: 75px;
 
   color: #1b1b1b;
+  @media only screen and (max-width: 479px) {
+    font-size: 45px;
+  }
 }
 
 .testLinkText {
@@ -46,7 +49,7 @@
     margin-left: 0px;
   }
   @media only screen and (max-width: 479px) {
-    width: 290px;
+    width: 310px;
   }
 }
 

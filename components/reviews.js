@@ -6,6 +6,9 @@ import React from "react";
 export default function Reviews() {
   return (
     <>
+    <div className={s.reviewsHDiv}>
+      <h3 className={s.reviewsH}>Нам довіряють</h3>
+    </div>
       <div id="reviews" className={s.reviewsMainDiv}>
         <Image
           src={reviewsImage}

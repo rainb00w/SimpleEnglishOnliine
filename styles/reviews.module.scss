@@ -25,3 +25,26 @@
     max-width: 490px;
   }
 }
+
+.reviewsHDiv{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 80px 0 20px 0;
+@media only screen and (max-width: 479px) {
+  margin: 40px 0 10px 0;
+}
+}
+
+.reviewsH{
+  font-family: "appleberry";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 42.54px;
+
+  color: #1b1b1b;
+  @media only screen and (max-width: 479px) {
+    font-size: 35px;
+  }
+}

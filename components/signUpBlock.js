@@ -1,6 +1,7 @@
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import s from "../styles/signUpBlock.module.scss";
+import axios from "axios";
 
 export default function SignUpBlock() {
   const formik = useFormik({
@@ -15,9 +16,24 @@ export default function SignUpBlock() {
         .required("Необхідне поле"),
       email: Yup.string().email("Неправильна почта").required("Необхідне поле"),
     }),
+
     onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
+      const messageBody = ` Имя : ${values.firstName} , Почта : ${values.email}, Телефон : ${values.phone}`;
+      const TOKEN = "5405323048:AAHAhAv_7eTYsRrDegoUl_VusvwV8XcuDlw";
+      const CHAT_ID = "-1001739141169";
+      const URL_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+
+      axios
+        .post(URL_API, {
+          chat_id: CHAT_ID,
+          text: messageBody,
+        })
+        .then(formik.setSubmitting(false))
+        .then(formik.resetForm());
+
+      // alert(messageBody);
     },
+
   });
 
   return (
