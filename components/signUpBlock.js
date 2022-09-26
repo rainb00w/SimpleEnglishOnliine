@@ -1,7 +1,10 @@
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import s from "../styles/signUpBlock.module.scss";
+
 import axios from "axios";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function SignUpBlock() {
   const formik = useFormik({
@@ -17,6 +20,7 @@ export default function SignUpBlock() {
       email: Yup.string().email("Неправильна почта").required("Необхідне поле"),
     }),
 
+  
     onSubmit: (values) => {
       const messageBody = ` Имя : ${values.firstName} , Почта : ${values.email}, Телефон : ${values.phone}`;
       const TOKEN = "5405323048:AAHAhAv_7eTYsRrDegoUl_VusvwV8XcuDlw";
@@ -29,11 +33,17 @@ export default function SignUpBlock() {
           text: messageBody,
         })
         .then(formik.setSubmitting(false))
-        .then(formik.resetForm());
+        .then(formik.resetForm())
+        .then(
+          toast.success("Заявка відправлена!", {
+            position: toast.POSITION.TOP_CENTER,
+            autoClose: 1000,
+            icon: false
+          })
+        );
 
       // alert(messageBody);
     },
-
   });
 
   return (

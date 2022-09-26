@@ -2,8 +2,10 @@ import s from "../styles/header.module.scss";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
-import Image from "next/image";
-import headerImage from "../public/img/forAdults/headerImage@2x.png";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+
 
 export default function Header() {
   const formik = useFormik({
@@ -19,6 +21,7 @@ export default function Header() {
       email: Yup.string().email("Неправильна почта").required("Необхідне поле"),
     }),
 
+  
     onSubmit: (values) => {
       const messageBody = ` Имя : ${values.firstName} , Почта : ${values.email}, Телефон : ${values.phone}`;
       const TOKEN = "5405323048:AAHAhAv_7eTYsRrDegoUl_VusvwV8XcuDlw";
@@ -31,7 +34,14 @@ export default function Header() {
           text: messageBody,
         })
         .then(formik.setSubmitting(false))
-        .then(formik.resetForm());
+        .then(formik.resetForm())
+        .then(
+          toast.success("Заявка відправлена!", {
+            position: toast.POSITION.TOP_CENTER,
+            autoClose: 1000,
+            icon: false
+          })
+        );
 
       // alert(messageBody);
     },
@@ -102,6 +112,7 @@ export default function Header() {
                   записатися
                 </button>
               </form>
+             
             </div>
           </div>
         </div>
