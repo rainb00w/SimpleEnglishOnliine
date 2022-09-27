@@ -43,6 +43,7 @@
   @media only screen and (max-width: 479px)  {
     font-size: 23px;
   }
+  
 }
 
 .form_input {
@@ -104,24 +105,27 @@
   font-family: "appleberry";
   font-style: normal;
   font-weight: 500;
-  font-size: 65px;
+  font-size: 60px;
   line-height: 75px;
   text-align: center;
   letter-spacing: 0.05em;
 
   color: #1B1B1B;
+  @media only screen and (max-width: 1199px)  {
+    font-size: 50px;
+   }
 
   @media only screen and (max-width: 767px)  {
     margin-top: 50px;
     font-weight: 500;
-    font-size: 50px;
+    font-size: 45px;
     line-height: 58px;
     text-align: center;
     letter-spacing: 0.05em;
   }
   @media only screen and (max-width: 479px)  {
     margin-top: 30px;
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 
@@ -130,22 +134,24 @@
   font-family: "appleberry";
   font-style: normal;
   font-weight: 700;
-  font-size: 35px;
+  font-size: 60px;
   line-height: 42.54px;
   text-align: center;
   letter-spacing: 0.05em;
 
   color: #1B1B1B;
   @media only screen and (max-width: 1199px)  {
+    font-size: 50px;
     max-width: 600px;
    }
 
   @media only screen and (max-width: 767px)  {
+    font-size: 45px;
    max-width: 540px;
   }
 
   @media only screen and (max-width: 479px)  {
-    font-size: 25px;
+    font-size: 30px;
   }
 }
 

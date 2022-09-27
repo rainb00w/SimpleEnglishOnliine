@@ -23,7 +23,6 @@
 }
 
 
-
 .reviewsVideoDiv {
     
   margin: 30px 0 30px 0;
@@ -55,11 +54,19 @@ margin: 80px 0 20px 0;
   font-family: "appleberry";
   font-style: normal;
   font-weight: 700;
-  font-size: 45px;
+  font-size: 55px;
   line-height: 42.54px;
 
   color: #1b1b1b;
+
+  @media only screen and (max-width: 1199px) {
+    font-size: 45px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    font-size: 45px;
+  }
   @media only screen and (max-width: 479px) {
-    font-size: 35px;
+    font-size: 30px;
   }
 }

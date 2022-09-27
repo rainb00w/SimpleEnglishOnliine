@@ -28,13 +28,14 @@
   color: #1b1b1b;
   position: relative;
   @media only screen and (max-width: 1199px) {
+    font-size: 55px;
     max-width: 500px;
   }
 
   @media only screen and (max-width: 767px) {
     max-width: 400px;
     font-weight: 500;
-    font-size: 50px;
+    font-size: 45px;
     line-height: 58px;
   }
   @media only screen and (max-width: 479px) {
@@ -48,17 +49,21 @@
 
 .bonusesH2Color {
   font-weight: 700;
-  font-size: 47px;
+  font-size: 65px;
   color: #874b79;
+  @media only screen and (max-width: 1199px) {
+    font-size: 55px;
+    
+  }
   @media only screen and (max-width: 767px) {
     max-width: 400px;
     font-weight: 700;
-    font-size: 35px;
+    font-size: 45px;
     line-height: 43px;
   }
   @media only screen and (max-width: 479px) {
     font-weight: 700;
-    font-size: 32px;
+    font-size: 35px;
     line-height: 30px;
   }
 }
