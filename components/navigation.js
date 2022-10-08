@@ -38,7 +38,7 @@ export default function Navigation() {
 
           <nav className={s.navBar} ref={navRef}>
 
-            { (router.pathname === "/privacy_policy" || router.pathname === "/public_offer_agreement" || router.pathname === "/test"  || router.pathname === "/english_for_move" ) &&      ( 
+            { (router.pathname === "/privacy_policy" || router.pathname === "/public_offer_agreement" || router.pathname === "/test"  || router.pathname === "/english_for_move" || router.pathname === "/companies" ) &&      ( 
               <Link href="/">
               <a>На головну</a>
             </Link>
@@ -65,6 +65,9 @@ export default function Navigation() {
             </Link>
             <Link href="#faq">
               <a>FAQ </a>
+            </Link>
+            <Link href="/companies">
+              <a>Для компаній </a>
             </Link>
             {/* <Link href="/blog">
               <a> Блог</a>

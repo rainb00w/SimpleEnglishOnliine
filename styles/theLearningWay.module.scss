@@ -1,0 +1,67 @@
+.mainContainer {
+  background: #874b79;
+}
+
+.headerText {
+  display: flex;
+  justify-content: center;
+  h3 {
+    margin: 30px 0 0 0;
+
+    width: 300px;
+
+    font-family: "appleberry";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+
+    color: #ffffff;
+
+    @media only screen and (min-width: 768px) {
+      margin: 60px 0 0 0;
+
+      width: 650px;
+
+      font-size: 60px;
+      line-height: 61px;
+    }
+  }
+}
+
+.formButtonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.form_button {
+  margin: 20px 0 20px 0;
+  padding: 20px 0 18px 0;
+
+  width: 300px;
+
+  font-family: "Mont";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #1b1b1b;
+  border: none;
+  background: #ffd24e;
+  box-shadow: 0px 4px 5px rgba(135, 75, 121, 0.34);
+  border-radius: 50px;
+
+  @media only screen and (min-width: 768px) {
+    margin: 20px 0 40px 0;
+
+    width: 450px;
+
+    font-size: 18px;
+    line-height: 23px;
+  }
+}

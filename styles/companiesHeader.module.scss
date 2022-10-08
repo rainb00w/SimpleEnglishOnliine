@@ -1,0 +1,249 @@
+.color {
+  color: #874b79;
+}
+
+.bgColor {
+  background-color: #f4f4f4;
+}
+
+.mainBlock {
+  display: grid;
+
+  background-color: #f4f4f4;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media only screen and (min-width: 1200px) {
+    grid-template-areas:
+      "a b"
+      "c c";
+  }
+}
+
+.girlImage {
+  @media only screen and (min-width: 1200px) {
+    margin: 0 0 -50px 0;
+    grid-area: a;
+  }
+}
+
+.headerH {
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: auto;
+
+  max-width: 320px;
+
+  font-family: "Verdana";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #1b1b1b;
+
+  @media screen and (min-width: 768px) {
+    max-width: 760px;
+
+    font-size: 45px;
+    line-height: 55px;
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+
+    text-align: left;
+  }
+
+}
+
+.headerP {
+  margin-top: 20px;
+  padding: 0 8px 0 8px;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  max-width: 300px;
+
+  font-family: "Mont";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+
+  color: #1b1b1b;
+
+  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 680px;
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    margin-left: 0;
+
+    max-width: 600px;
+    
+    text-align: left;
+  }
+}
+
+.headerPColor {
+  text-transform: uppercase;
+  color: #874b79;
+}
+
+.formFlex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  margin: -130px 0 30px 0;
+
+  align-self: center;
+  justify-self: center;
+
+  height: 418px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+
+  background-color: #ffd24e;
+  padding: 32px;
+  border-radius: 10px;
+
+  @media only screen and (min-width: 320px) and (max-width: 479px) {
+    margin: -130px 0 30px 0;
+
+    width: 300px;
+  }
+
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    margin: -150px 0 50px 0;
+    width: 400px;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+    margin: -200px 0 50px 0;
+
+    width: 690px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    margin: -50px 0 50px 0;
+
+    grid-area: c;
+    width: 1170px;
+    height: 240px;
+
+    & input:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}
+
+.form_header {
+  font-family: "Mont";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #1b1b1b;
+
+  @media only screen and (min-width: 320px) and (max-width: 479px) {
+    width: 360px;
+  }
+
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 25px;
+    line-height: 32px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    width: 800px;
+
+    font-size: 25px;
+    line-height: 32px;
+  }
+}
+
+.form_input {
+  margin-top: 20px;
+  padding-left: 22px;
+
+  width: 407px;
+  height: 48px;
+
+  border-radius: 5px;
+  border-style: none;
+  font-family: "Mont";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #535353;
+
+  @media only screen and (min-width: 320px) and (max-width: 479px) {
+    width: 250px;
+  }
+
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    width: 360px;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 600px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    width: 330px;
+  }
+}
+
+.form_button {
+  margin-top: 25px;
+  width: 238px;
+  height: 57px;
+  background: #874b79;
+  box-shadow: 0px 4px 5px rgba(135, 75, 121, 0.34);
+  border-radius: 50px;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: "Mont";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 23px;
+  /* identical to box height */
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-style: none;
+}
+
+.form_button:hover {
+  color: #874b79;
+  background: #ffffff;
+}
+
+.formRequiredText {
+  margin-top: 5px;
+  color: #874b79;
+}

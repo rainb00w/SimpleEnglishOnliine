@@ -92,9 +92,11 @@
 }
 
 .listItem {
+  margin: 15px 0 0 40px;
+
   display: grid;
   grid-template-columns: 30px 1fr;
-  margin: 15px 0 0 40px;
+
   font-family: "Mont";
   font-style: normal;
   font-weight: 200;

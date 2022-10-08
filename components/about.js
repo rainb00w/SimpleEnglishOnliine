@@ -2,10 +2,10 @@ import Image from "next/image";
 import React from 'react';
 import s from "../styles/about.module.scss";
 // import firstImage from "img/forAdults/1@2x.png";
-import secondImage from "../public/img/forAdults/2@2x.png";
-import thirdImage from "../public/img/forAdults/3@2x.png";
-import fourthImage from "../public/img/forAdults/4@2x.png";
-import fifthImage from "../public/img/forAdults/5@2x.png";
+// import secondImage from "../public/img/forAdults/2@2x.png";
+// import thirdImage from "../public/img/forAdults/3@2x.png";
+// import fourthImage from "../public/img/forAdults/4@2x.png";
+// import fifthImage from "../public/img/forAdults/5@2x.png";
 
 export default function About() {
   return (
