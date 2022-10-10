@@ -55,7 +55,7 @@ export default function SignUpBlockCompanies() {
 
           <form onSubmit={formik.handleSubmit} className={s.form}>
             <label className={s.form_header}>
-            Заповни форму <br></br>та чекай дзвінка від менеджера!
+            Заповни форму <br></br>щоб отримати консультацію!
             </label>
             <input
               className={s.form_input}
