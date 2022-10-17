@@ -1,0 +1,80 @@
+.main_container {
+  padding: 20px 0 20px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.image {
+  width: 140px;
+}
+
+.review_image {
+    margin: 20px 0;
+    
+    
+
+  width: 300px;
+}
+
+.header_text_container {
+
+  width: 300px;
+}
+
+.header_text {
+  font-family: "appleberry";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #000000;
+}
+
+.leave_feedback {
+  padding: 10px 0;
+  width: 240px;
+
+  background-color: #fff;
+  border: 2px solid #874b79;
+  border-radius: 50px;
+
+  font-family: "Mont";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #1b1b1b;
+}
+
+.contact_with_manager {
+  margin: 20px 0 0 0;
+  padding: 10px 0;
+  width: 300px;
+
+  border-style: none;
+  background: #874b79;
+  border-radius: 50px;
+
+  font-family: "Mont";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}

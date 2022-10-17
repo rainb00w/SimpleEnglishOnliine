@@ -1,0 +1,130 @@
+.main_container {
+  padding: 40px 0 40px 0;
+}
+
+.header_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header {
+  width: 280px;
+
+  font-family: "appleberry";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #1b1b1b;
+}
+
+.image {
+  width: 130px;
+}
+
+.blocks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+    display: grid;
+    grid-template:
+      "a a"
+      "b c";
+    gap: 10px 50px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    flex-direction: row;
+    & .block:not(:last-child) {
+        margin-right: 50px;
+      }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .grid1 {
+    grid-area: a;
+  }
+  .grid2 {
+    grid-area: b;
+  }
+  .grid3 {
+    grid-area: c;
+  }
+}
+
+.block {
+  margin: 40px 0 0 0;
+
+
+
+ @media only screen and (min-width: 320px) and (max-width: 479px) {
+     width: 300px;
+}
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+
+  @media only screen and (min-width: 1200px) {
+  width: 350px;
+    }
+  
+}
+
+.item_header {
+  margin: 20px 0 0 0;
+
+  font-family: "Mont";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 32px;
+  text-align: center;
+
+  color: #59204d;
+}
+
+.item_text {
+  font-family: "Mont";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+
+  color: #1b1b1b;
+}
+
+.button {
+  margin: 20px 0 0 0;
+  padding: 14px 0;
+
+  width: 240px;
+
+  background: #ffffff;
+  border: 2px solid #874b79;
+  border-radius: 50px;
+
+  font-family: "Mont";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #1b1b1b;
+}

@@ -1,0 +1,140 @@
+.main_container {
+  background-color: #874b79;
+  padding: 0 0 50px 0;
+}
+
+.header {
+  padding: 40px 0 0 0;
+}
+
+.header_text {
+  font-family: "appleberry";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+
+  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 60px;
+    line-height: 64px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    font-size: 60px;
+    line-height: 64px;
+  }
+}
+
+.blocks {
+  margin: 20px 0 0 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media only screen and (max-width: 1199px) {
+    & .block:not(:last-child) {
+      margin-bottom: 50px;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    flex-direction: row;
+    & .block:not(:last-child) {
+        margin-right: 30px;
+      }
+}
+}
+
+.block {
+  padding: 0 0 50px 0;
+
+  width: 300px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.price_header {
+  margin: 40px 0 0 0;
+
+  font-family: "Verdana";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #1b1b1b;
+}
+
+.price_main_text {
+  margin: 30px 0 0 0;
+
+  width: 260px;
+
+  font-family: "Mont";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  /* or 125% */
+
+  text-align: center;
+
+  color: #1b1b1b;
+}
+
+.price {
+  margin: 20px 0 0 0;
+
+  font-family: "Mont";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 51px;
+  text-align: center;
+
+  color: #59204d;
+}
+
+.price_text {
+  font-size: 20px;
+}
+
+.button {
+  margin: 20px 0 0 0;
+
+  width: 260px;
+  height: 40px;
+
+  border: none;
+  background: #ffd24e;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.15);
+  border-radius: 50px;
+
+  font-family: "Mont";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 23px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #1b1b1b;
+}
