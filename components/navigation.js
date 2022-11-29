@@ -103,13 +103,13 @@ export default function Navigation() {
               </>
             )}
 
-            {toggled && (
+            {/* {toggled && (
               <div className={s.form_button_container}>
                 <button type="submit" className={s.form_button}>
                   передзвоніть мені
                 </button>
               </div>
-            )}
+            )} */}
           </nav>
 
           {!toggled && (
