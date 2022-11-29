@@ -78,7 +78,9 @@ export default function ForYouSC() {
           </div>
 
           <div>
-            <button className={s.button}>записатись на speaking club</button>
+            <a href="#speaking-club-form">
+              <button className={s.button}>записатись на speaking club</button>
+            </a>
           </div>
         </div>
       </div>

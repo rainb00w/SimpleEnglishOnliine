@@ -107,9 +107,14 @@ svg {
 }
 
 button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
   transition: 0.3s ease;
+
   :hover {
-    cursor: pointer;
     transform: scale(1.1);
   }
 }
@@ -295,10 +300,10 @@ button {
 }
 
 .Toastify__toast {
-  background-color: #ffd24e !important; 
+  background-color: #ffd24e !important;
 }
 .Toastify__toast--rtl {
-  background-color: #ffd24e ;
+  background-color: #ffd24e;
 }
 
 .Toastify__toast-body {
@@ -311,10 +316,10 @@ button {
 }
 
 .swiper-button-next,
-.swiper-button-prev{
+.swiper-button-prev {
   color: #1b1b1b !important;
 }
 
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
   background-color: #ffd24e !important;
 }

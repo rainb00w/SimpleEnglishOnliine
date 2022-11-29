@@ -21,7 +21,7 @@ export default function HeaderSC() {
     }),
 
     onSubmit: (values) => {
-      const messageBody = ` Имя : ${values.firstName} , Почта : ${values.email}, Телефон : ${values.phone}`;
+      const messageBody = `Speaking-club | Имя : ${values.firstName} , Почта : ${values.email}, Телефон : ${values.phone}`;
       const TOKEN = "5405323048:AAHAhAv_7eTYsRrDegoUl_VusvwV8XcuDlw";
       const CHAT_ID = "-1001739141169";
       const URL_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
@@ -60,7 +60,7 @@ export default function HeaderSC() {
               </h1>
             </div>
 
-            <div className={s.form_div}>
+            <div className={s.form_div} id="speaking-club-form">
               <form onSubmit={formik.handleSubmit} className={s.form}>
                 <label className={s.form_header}>
                   Заповни форму,<br></br> щоб записатися на Speaking club!

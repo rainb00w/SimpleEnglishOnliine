@@ -44,8 +44,8 @@
   @media only screen and (min-width: 1200px) {
     flex-direction: row;
     & .block:not(:last-child) {
-        margin-right: 50px;
-      }
+      margin-right: 50px;
+    }
   }
 }
 
@@ -64,23 +64,18 @@
 .block {
   margin: 40px 0 0 0;
 
-
-
- @media only screen and (min-width: 320px) and (max-width: 479px) {
-     width: 300px;
-}
-
+  @media only screen and (min-width: 320px) and (max-width: 479px) {
+    width: 300px;
+  }
 
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 
-
   @media only screen and (min-width: 1200px) {
-  width: 350px;
-    }
-  
+    width: 350px;
+  }
 }
 
 .item_header {
@@ -127,4 +122,14 @@
   text-transform: uppercase;
 
   color: #1b1b1b;
+
+  cursor: default;
+
+  // cursor: pointer;
+  transition: all 0.3s;
+
+  // &:hover {
+  //   background-color: #874b79;
+  //   color: #fff;
+  // }
 }

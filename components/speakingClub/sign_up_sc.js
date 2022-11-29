@@ -5,7 +5,7 @@ export default function SignUpSC() {
     <>
       <div className={s.main_container}>
         <div className={s.header_container}>
-          <h2 className={s.header}> Записатися на клаб</h2>
+          <h2 className={s.header}> Як записатися на клаб ?</h2>
         </div>
 
         <div className={s.blocks}>
@@ -32,6 +32,10 @@ export default function SignUpSC() {
                 на телефон або компʼютер
               </p>
             </div>
+
+            {/* <a href="https://zoom.us/support/download">
+             
+            </a> */}
             <button className={s.button}>завантажити Zoom</button>
           </div>
           <div className={`${s.block} ${s.grid3}`}>

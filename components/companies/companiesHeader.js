@@ -27,8 +27,8 @@ export default function CompaniesHeader() {
     }),
 
     onSubmit: (values) => {
-      console.log('working', values)
-      const messageBody = ` Имя : ${values.firstName} , Почта : ${values.email}, Телефон : ${values.phone}`;
+      console.log("working", values);
+      const messageBody = `Для команий | Имя : ${values.firstName} , Почта : ${values.email}, Телефон : ${values.phone}`;
       const TOKEN = "5405323048:AAHAhAv_7eTYsRrDegoUl_VusvwV8XcuDlw";
       const CHAT_ID = "-1001739141169";
       const URL_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
@@ -106,7 +106,8 @@ export default function CompaniesHeader() {
             </div>
             <form onSubmit={formik.handleSubmit} className={s.form}>
               <label className={s.form_header}>
-                Заповніть форму, {width < 1200 && <br></br>} щоб отримати консультацію!
+                Заповніть форму, {width < 1200 && <br></br>} щоб отримати
+                консультацію!
               </label>
               {width > 1200 ? (
                 <label className={s.formFlex}>
@@ -196,7 +197,7 @@ export default function CompaniesHeader() {
               )}
 
               <button type="submit" className={s.form_button}>
-              відправити
+                відправити
               </button>
             </form>
           </div>

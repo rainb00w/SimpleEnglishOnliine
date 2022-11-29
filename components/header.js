@@ -5,8 +5,6 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-
-
 export default function Header() {
   const formik = useFormik({
     initialValues: {
@@ -21,9 +19,8 @@ export default function Header() {
       email: Yup.string().email("Неправильна почта").required("Необхідне поле"),
     }),
 
-  
     onSubmit: (values) => {
-      const messageBody = ` Имя : ${values.firstName} , Почта : ${values.email}, Телефон : ${values.phone}`;
+      const messageBody = `Индивидуально / Имя : ${values.firstName} , Почта : ${values.email}, Телефон : ${values.phone}`;
       const TOKEN = "5405323048:AAHAhAv_7eTYsRrDegoUl_VusvwV8XcuDlw";
       const CHAT_ID = "-1001739141169";
       const URL_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
@@ -39,7 +36,7 @@ export default function Header() {
           toast.success("Заявка відправлена!", {
             position: toast.POSITION.TOP_CENTER,
             autoClose: 1000,
-            icon: false
+            icon: false,
           })
         );
 
@@ -112,7 +109,6 @@ export default function Header() {
                   записатися
                 </button>
               </form>
-             
             </div>
           </div>
         </div>
