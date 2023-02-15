@@ -7,11 +7,11 @@ const nextConfig = {
 module.exports = nextConfig;
 
 module.exports = {
-  // experimental: {
-  //   images: {
-  //     unoptimized: true,
-  //   },
-  // },
+  experimental: {
+    images: {
+      unoptimized: true,
+    },
+  },
 };
 
 module.exports = {
