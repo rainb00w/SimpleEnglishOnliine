@@ -1,7 +1,4 @@
 import useWindowSize from '../hooks/useWidthHook';
-
-import girlDesktop from '../public/img/forAdults/girl2_desktop@2x.jpg';
-import girlMobile from '../public/img/forAdults/girl2_mobile@2x.jpg';
 import s from '../styles/bonuses.module.scss';
 
 export default function Bonuses() {
@@ -22,7 +19,7 @@ export default function Bonuses() {
 
               {width < 1200 ? (
                 <img
-                  src={girlMobile}
+                  src="/img/forAdults/girl2_desktop@2x.jpg"
                   alt="Teacher"
                   //  width={470}
                   //  height={672}
@@ -30,7 +27,7 @@ export default function Bonuses() {
                 />
               ) : (
                 <img
-                  src={girlDesktop}
+                  src="/img/forAdults/girl2_desktop@2x.jpg"
                   alt="Teacher"
                   width={470}
                   height={672}

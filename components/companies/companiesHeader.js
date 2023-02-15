@@ -1,13 +1,7 @@
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-
 import axios from 'axios';
-
 import useWindowSize from '../../hooks/useWidthHook';
-import girlDesktop from '../../public/img/forCompanies/compniesHeader_desktop.webp';
-import girlTablet from '../../public/img/forCompanies/compniesHeader_tablet.webp';
-import girlMobile from '../../public/img/forCompanies/compniesHeader_mobile.webp';
-
 import s from '../../styles/companiesHeader.module.scss';
 
 export default function CompaniesHeader() {
@@ -76,7 +70,7 @@ export default function CompaniesHeader() {
             <div className={s.girlImage}>
               {width < 768 && (
                 <img
-                  src={girlMobile}
+                  src="/img/forCompanies/compniesHeader_mobile.webp"
                   alt="Teacher"
                   //  width={470}
                   //  height={672}
@@ -85,7 +79,7 @@ export default function CompaniesHeader() {
               )}
               {width < 1200 && width > 768 && (
                 <img
-                  src={girlTablet}
+                  src="/img/forCompanies/compniesHeader_tablet.webp"
                   alt="Teacher"
                   //  width={470}
                   //  height={672}
@@ -95,9 +89,9 @@ export default function CompaniesHeader() {
 
               {width > 1200 && (
                 <img
-                  src={girlDesktop}
+                  src="/img/forCompanies/compniesHeader_desktop.webp"
                   alt="Teacher"
-                  //  width={470}
+                  width={690}
                   //  height={672}
                   placeholder="blur" // Optional blur-up while loading
                 />
@@ -110,7 +104,6 @@ export default function CompaniesHeader() {
               </label>
               {width > 1200 ? (
                 <label className={s.formFlex}>
-                  {' '}
                   <input
                     className={s.form_input}
                     id="firstName"

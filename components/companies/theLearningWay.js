@@ -18,7 +18,7 @@ export default function TheLearningWay() {
           <div>
             {width < 768 && (
               <img
-                src={roadMobile}
+                src="img/forCompanies/roadMobile.webp"
                 alt="Teacher"
                 //  width={470}
                 //  height={672}
@@ -27,7 +27,7 @@ export default function TheLearningWay() {
             )}
             {width < 1200 && width > 768 && (
               <img
-                src={roadTablet}
+                src="img/forCompanies/roadTablet.webp"
                 alt="Teacher"
                 //  width={470}
                 //  height={672}
@@ -37,7 +37,7 @@ export default function TheLearningWay() {
 
             {width > 1200 && (
               <img
-                src={roadDesktop}
+                src="img/forCompanies/roadDesktop.webp"
                 alt="Teacher"
                 //  width={470}
                 //  height={672}

@@ -1,15 +1,17 @@
 import Link from 'next/link';
 import s from '../../styles/footer.module.scss';
 
-import logoImg from '../../public/logo_rgb@2x.png';
-import tlgImg from '../../public/telegram.svg';
-
 export function FirstBlock() {
   return (
     <div className={s.footerFirstBlock}>
       <div className={s.footerFirstBlockLeft}>
         <Link href="/">
-          <img src={logoImg} alt="SimpleEngliish" width={120} height={120} />
+          <img
+            src="/logo_rgb@2x.png"
+            alt="SimpleEngliish"
+            width={120}
+            height={120}
+          />
         </Link>
       </div>
 
