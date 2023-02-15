@@ -1,36 +1,36 @@
-import { useFormik } from "formik";
-import * as Yup from "yup";
-import Image from "next/image";
-import axios from "axios";
+import { useFormik } from 'formik';
+import * as Yup from 'yup';
+import Image from 'next/image';
+import axios from 'axios';
 
-import useWindowSize from "../../hooks/useWidthHook";
-import girlDesktop from "../../public/img/forCompanies/compniesHeader_desktop.webp";
-import girlTablet from "../../public/img/forCompanies/compniesHeader_tablet.webp";
-import girlMobile from "../../public/img/forCompanies/compniesHeader_mobile.webp";
+import useWindowSize from '../../hooks/useWidthHook';
+import girlDesktop from '../../public/img/forCompanies/compniesHeader_desktop.webp';
+import girlTablet from '../../public/img/forCompanies/compniesHeader_tablet.webp';
+import girlMobile from '../../public/img/forCompanies/compniesHeader_mobile.webp';
 
-import s from "../../styles/companiesHeader.module.scss";
+import s from '../../styles/companiesHeader.module.scss';
 
 export default function CompaniesHeader() {
   const { width } = useWindowSize();
 
   const formik = useFormik({
     initialValues: {
-      firstName: "",
-      email: "",
-      phone: "",
+      firstName: '',
+      email: '',
+      phone: '',
     },
     validationSchema: Yup.object({
       firstName: Yup.string()
-        .max(15, "Максимум 15 символів")
-        .required("Необхідне поле"),
-      email: Yup.string().email("Неправильна почта").required("Необхідне поле"),
+        .max(15, 'Максимум 15 символів')
+        .required('Необхідне поле'),
+      email: Yup.string().email('Неправильна почта').required('Необхідне поле'),
     }),
 
     onSubmit: (values) => {
-      console.log("working", values);
+      console.log('working', values);
       const messageBody = `Для команий | Имя : ${values.firstName} , Почта : ${values.email}, Телефон : ${values.phone}`;
-      const TOKEN = "5405323048:AAHAhAv_7eTYsRrDegoUl_VusvwV8XcuDlw";
-      const CHAT_ID = "-1001739141169";
+      const TOKEN = '5405323048:AAHAhAv_7eTYsRrDegoUl_VusvwV8XcuDlw';
+      const CHAT_ID = '-1001739141169';
       const URL_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
       axios
@@ -58,7 +58,7 @@ export default function CompaniesHeader() {
           <div className={s.mainBlock}>
             <div className={s.header}>
               <div className={s.headerH}>
-                <span className={s.color}>Англійська</span>{" "}
+                <span className={s.color}>Англійська</span>{' '}
                 {width > 767 && (
                   <>
                     <br></br>
@@ -110,7 +110,7 @@ export default function CompaniesHeader() {
               </label>
               {width > 1200 ? (
                 <label className={s.formFlex}>
-                  {" "}
+                  {' '}
                   <input
                     className={s.form_input}
                     id="firstName"
@@ -118,8 +118,8 @@ export default function CompaniesHeader() {
                     type="text"
                     placeholder={
                       formik.touched.firstName && formik.errors.firstName
-                        ? "Ім’я ( необхідне поле )"
-                        : "Ім’я..."
+                        ? 'Ім’я ( необхідне поле )'
+                        : 'Ім’я...'
                     }
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
@@ -132,8 +132,8 @@ export default function CompaniesHeader() {
                     type="email"
                     placeholder={
                       formik.touched.email && formik.errors.email
-                        ? "Email ( необхідне поле )"
-                        : "Email..."
+                        ? 'Email ( необхідне поле )'
+                        : 'Email...'
                     }
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
@@ -159,8 +159,8 @@ export default function CompaniesHeader() {
                     type="text"
                     placeholder={
                       formik.touched.firstName && formik.errors.firstName
-                        ? "Ім’я ( необхідне поле )"
-                        : "Ім’я..."
+                        ? 'Ім’я ( необхідне поле )'
+                        : 'Ім’я...'
                     }
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
@@ -174,8 +174,8 @@ export default function CompaniesHeader() {
                     type="email"
                     placeholder={
                       formik.touched.email && formik.errors.email
-                        ? "Email ( необхідне поле )"
-                        : "Email..."
+                        ? 'Email ( необхідне поле )'
+                        : 'Email...'
                     }
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}

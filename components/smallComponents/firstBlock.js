@@ -9,14 +9,7 @@ export function FirstBlock() {
     <div className={s.footerFirstBlock}>
       <div className={s.footerFirstBlockLeft}>
         <Link href="/">
-          <a>
-            <Image
-              src={logoImg}
-              alt="SimpleEngliish"
-              width={120}
-              height={120}
-            />
-          </a>
+          <Image src={logoImg} alt="SimpleEngliish" width={120} height={120} />
         </Link>
       </div>
 

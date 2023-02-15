@@ -39,58 +39,36 @@ export default function Navigation() {
               router.pathname === '/speakingclub' ||
               router.pathname === '/english_for_move' ||
               router.pathname === '/companies') && (
-              <Link href="/">
-                <a>На головну</a>
-              </Link>
+              <Link href="/">На головну</Link>
             )}
             {router.pathname === '/companies' && (
               <>
-                <Link href="/speakingclub">
-                  <a>Speaking club</a>
-                </Link>
-                <Link href="/speaking-club-schedule">
-                  <a>Розклад</a>
-                </Link>
+                <Link href="/speakingclub">Speaking club</Link>
+                <Link href="/speaking-club-schedule">Розклад</Link>
               </>
             )}
             {router.pathname === '/speakingclub' && (
               <>
-                <Link href="/companies">
-                  <a>Для компаній</a>
-                </Link>
-                <Link href="/speaking-club-schedule">
-                  <a>Розклад</a>
-                </Link>
+                <Link href="/companies">Для компаній</Link>
+                <Link href="/speaking-club-schedule">Розклад</Link>
               </>
             )}
 
             {router.pathname === '/speaking-club-schedule' && (
               <>
-                <Link href="/">
-                  <a>На головну</a>
-                </Link>
-                <Link href="/speakingclub">
-                  <a>Speaking club</a>
-                </Link>
-                <Link href="/companies">
-                  <a>Для компаній</a>
-                </Link>
+                <Link href="/">На головну</Link>
+                <Link href="/speakingclub">Speaking club</Link>
+                <Link href="/companies">Для компаній</Link>
               </>
             )}
 
             {router.pathname === '/' && (
               <>
-                <Link href="/companies">
-                  <a>Для компаній</a>
-                </Link>
+                <Link href="/companies">Для компаній</Link>
 
-                <Link href="/speakingclub">
-                  <a>Speaking club</a>
-                </Link>
+                <Link href="/speakingclub">Speaking club</Link>
 
-                <Link href="/speaking-club-schedule">
-                  <a>Розклад</a>
-                </Link>
+                <Link href="/speaking-club-schedule">Розклад</Link>
 
                 <button className="nav_btn nav_close_btn" onClick={showNavBar}>
                   <img
