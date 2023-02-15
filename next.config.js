@@ -8,7 +8,8 @@ module.exports = nextConfig;
 
 module.exports = {
   images: {
-    unoptimized: true,
+    loader: 'imgix',
+    path: 'https://noop/',
   },
 };
 
