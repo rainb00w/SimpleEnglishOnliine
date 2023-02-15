@@ -3,12 +3,12 @@ import Image from "next/image";
 import reviewsImage from "../public/img/forAdults/reviews1.webp";
 
 import React, { useState, useRef } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+// import "swiper/css";
+// import "swiper/css/navigation";
+// import "swiper/css/pagination";
+// import "swiper/css/scrollbar";
 
 export default function Reviews() {
   return (
@@ -18,7 +18,7 @@ export default function Reviews() {
           <h3 className={s.reviewsH}>Нам довіряють</h3>
         </div>
         <div id="reviews" className={s.reviewsMainDiv}>
-          <Swiper
+          {/* <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             spaceBetween={50}
             slidesPerView={2}
@@ -48,15 +48,15 @@ export default function Reviews() {
                   preload="metadata"
                   // poster="img/forAdults/video_preview.webp"
                 >
-                  {/* <source src="/video-example.webm" type="video/webm" /> */}
+                  <source src="/video-example.webm" type="video/webm" />
                   <source src="../vid/review2.mp4" type="video/mp4" />
                   Sorry, your browser doesn't support videos.
                 </video>
               </div>
             </SwiperSlide>
-            {/* <SwiperSlide>Slide 3</SwiperSlide>
-          <div class="swiper-pagination"  slot="pagination"></div> */}
-          </Swiper>
+            <SwiperSlide>Slide 3</SwiperSlide>
+          <div class="swiper-pagination"  slot="pagination"></div> 
+          </Swiper>  */}
         </div>
       </div>
     </>

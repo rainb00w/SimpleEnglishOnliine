@@ -3,8 +3,8 @@ import * as Yup from "yup";
 import s from "../styles/signUpBlock.module.scss";
 
 import axios from "axios";
-import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+// import { toast } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
 
 export default function SignUpBlock() {
   const formik = useFormik({
@@ -32,14 +32,13 @@ export default function SignUpBlock() {
           text: messageBody,
         })
         .then(formik.setSubmitting(false))
-        .then(formik.resetForm())
-        .then(
-          toast.success("Заявка відправлена!", {
-            position: toast.POSITION.TOP_CENTER,
-            autoClose: 1000,
-            icon: false,
-          })
-        );
+        .then(formik.resetForm());
+
+      // toast.success("Заявка відправлена!", {
+      //   position: toast.POSITION.TOP_CENTER,
+      //   autoClose: 1000,
+      //   icon: false,
+      // })();
 
       // alert(messageBody);
     },

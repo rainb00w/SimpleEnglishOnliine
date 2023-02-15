@@ -1,17 +1,17 @@
-import dynamic from "next/dynamic";
-import Head from "next/head";
-import { ToastContainer } from "react-toastify";
+import dynamic from 'next/dynamic';
+import Head from 'next/head';
+// import { ToastContainer } from "react-toastify";
 
-import Navigation from "../components/navigation";
-import Header from "../components/header";
-import About from "../components/about";
-import Groups from "../components/groups";
-import Bonuses from "../components/bonuses";
-import TestLink from "../components/testLink";
-import Reviews from "../components/reviews";
-import SignUpBlock from "../components/signUpBlock";
-import Faq from "../components/faq";
-import Footer from "../components/footer";
+import Navigation from '../components/navigation';
+import Header from '../components/header';
+import About from '../components/about';
+import Groups from '../components/groups';
+import Bonuses from '../components/bonuses';
+import TestLink from '../components/testLink';
+import Reviews from '../components/reviews';
+import SignUpBlock from '../components/signUpBlock';
+import Faq from '../components/faq';
+import Footer from '../components/footer';
 
 // const About = dynamic(() => import("../components/about"), {
 //   suspense: true,
@@ -54,7 +54,7 @@ export default function Home() {
       <SignUpBlock />
       <Faq />
       <Footer />
-      <ToastContainer className="toast-container" toastClassName="dark-toast" />
+      {/* <ToastContainer className="toast-container" toastClassName="dark-toast" /> */}
     </>
   );
 }

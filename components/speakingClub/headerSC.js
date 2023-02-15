@@ -1,8 +1,8 @@
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
-import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+// import { toast } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
 
 import s from "../../styles/sc/headerSC.module.scss";
 
@@ -33,13 +33,13 @@ export default function HeaderSC() {
         })
         .then(formik.setSubmitting(false))
         .then(formik.resetForm())
-        .then(
-          toast.success("Заявка відправлена!", {
-            position: toast.POSITION.TOP_CENTER,
-            autoClose: 1000,
-            icon: false,
-          })
-        );
+        .then
+        // toast.success("Заявка відправлена!", {
+        //   position: toast.POSITION.TOP_CENTER,
+        //   autoClose: 1000,
+        //   icon: false,
+        // })
+        ();
 
       // alert(messageBody);
     },

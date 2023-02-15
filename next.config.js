@@ -2,27 +2,26 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
 
+module.exports = {
+  experimental: {
+    images: {
+      unoptimized: true,
+    },
+  },
+};
 
-// module.exports = {
-//   experimental: {
-//     images: {
-//       unoptimized: true,
-//     },
-//   },
-// }
+module.exports = {
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.svg$/i,
+      issuer: /\.[jt]sx?$/,
+      use: ["@svgr/webpack"],
+    });
 
-// module.exports = {
-//   webpack(config) {
-//     config.module.rules.push({
-//       test: /\.svg$/i,
-//       issuer: /\.[jt]sx?$/,
-//       use: ['@svgr/webpack'],
-//     })
-
-//     return config
-//   },
-// }
+    return config;
+  },
+};

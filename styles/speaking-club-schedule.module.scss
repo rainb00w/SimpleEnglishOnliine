@@ -1,0 +1,154 @@
+.club_schedule {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 1.4rem 0;
+
+  &_container {
+    padding: 40px 0;
+  }
+
+  &_heading {
+    margin: 1rem 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 38px;
+
+    color: #1b1b1b;
+  }
+  &_list {
+    margin: 1.4rem 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 60px;
+    row-gap: 60px;
+
+    &_time {
+      font-family: 'Mont';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 23px;
+      /* identical to box height */
+
+      color: #1b1b1b;
+    }
+
+    &_item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      position: relative;
+
+      width: 270px;
+      height: 270px;
+
+      background-color: #874b79;
+
+      &:hover {
+        transition: all 0.3s;
+        transform: scale(0.97);
+      }
+
+      &_link {
+        margin: 14px 0 0 0;
+        padding: 20px 50px;
+
+        display: inline-block;
+
+        background: #ffd24e;
+        box-shadow: 0px 4px 5px rgba(135, 75, 121, 0.34);
+        padding: 18px 30px 15px 30px;
+        border-style: none;
+        border-radius: 50px;
+        font-family: 'Mont';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+        /* identical to box height */
+
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+
+        color: #1b1b1b;
+
+        &:hover {
+          background: #ffffff;
+          color: #59204d;
+        }
+
+        &_container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
+      &_text {
+        margin: 10px 0 0 0;
+        font-family: 'Mont';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 22px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.05em;
+
+        color: #1b1b1b;
+      }
+
+      &_heading {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+
+        font-family: 'Mont';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 41px;
+
+        color: #59204d;
+      }
+
+      &_image {
+        width: 100px;
+
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+      }
+    }
+  }
+}
+
+.item1 {
+  background: linear-gradient(136.02deg, #f6deba 18.86%, #ffb74a 128.59%);
+  border-radius: 10px;
+}
+
+.item2 {
+  background: linear-gradient(142.13deg, #874b79 37.66%, #59204d 102.46%);
+  border-radius: 10px;
+  h3 {
+    color: #fff;
+  }
+}
+
+.item3 {
+  background: #f6deba;
+  border-radius: 10px;
+}

@@ -1,28 +1,28 @@
-import s from "../styles/header.module.scss";
-import { useFormik } from "formik";
-import * as Yup from "yup";
-import axios from "axios";
-import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import s from '../styles/header.module.scss';
+import { useFormik } from 'formik';
+import * as Yup from 'yup';
+import axios from 'axios';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Header() {
   const formik = useFormik({
     initialValues: {
-      firstName: "",
-      email: "",
-      phone: "",
+      firstName: '',
+      email: '',
+      phone: '',
     },
     validationSchema: Yup.object({
       firstName: Yup.string()
-        .max(15, "Максимум 15 символів")
-        .required("Необхідне поле"),
-      email: Yup.string().email("Неправильна почта").required("Необхідне поле"),
+        .max(15, 'Максимум 15 символів')
+        .required('Необхідне поле'),
+      email: Yup.string().email('Неправильна почта').required('Необхідне поле'),
     }),
 
     onSubmit: (values) => {
       const messageBody = `Индивидуально / Имя : ${values.firstName} , Почта : ${values.email}, Телефон : ${values.phone}`;
-      const TOKEN = "5405323048:AAHAhAv_7eTYsRrDegoUl_VusvwV8XcuDlw";
-      const CHAT_ID = "-1001739141169";
+      const TOKEN = '5405323048:AAHAhAv_7eTYsRrDegoUl_VusvwV8XcuDlw';
+      const CHAT_ID = '-1001739141169';
       const URL_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
       axios
@@ -33,14 +33,13 @@ export default function Header() {
         .then(formik.setSubmitting(false))
         .then(formik.resetForm())
         .then(
-          toast.success("Заявка відправлена!", {
+          toast.success('Заявка відправлена!', {
             position: toast.POSITION.TOP_CENTER,
             autoClose: 1000,
             icon: false,
           })
-        );
-
-      // alert(messageBody);
+        )
+        .catch((error) => console.log(error));
     },
   });
 
@@ -53,7 +52,7 @@ export default function Header() {
               <h1 className={s.textH1}>
                 <span className={s.color} lang="en">
                   Simple English
-                </span>{" "}
+                </span>{' '}
                 - <br />
                 заговорити англійською просто!
               </h1>
@@ -71,8 +70,8 @@ export default function Header() {
                   type="text"
                   placeholder={
                     formik.touched.firstName && formik.errors.firstName
-                      ? "Ім’я ( необхідне поле )"
-                      : "Ім’я..."
+                      ? 'Ім’я ( необхідне поле )'
+                      : 'Ім’я...'
                   }
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
@@ -86,8 +85,8 @@ export default function Header() {
                   type="email"
                   placeholder={
                     formik.touched.email && formik.errors.email
-                      ? "Email ( необхідне поле )"
-                      : "Email..."
+                      ? 'Email ( необхідне поле )'
+                      : 'Email...'
                   }
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}

@@ -39,14 +39,13 @@ export default function CompaniesHeader() {
           text: messageBody,
         })
         .then(formik.setSubmitting(false))
-        .then(formik.resetForm())
-        .then(
-          toast.success("Заявка відправлена!", {
-            position: toast.POSITION.TOP_CENTER,
-            autoClose: 1000,
-            icon: false,
-          })
-        );
+        .then(formik.resetForm());
+
+      // toast.success("Заявка відправлена!", {
+      //   position: toast.POSITION.TOP_CENTER,
+      //   autoClose: 1000,
+      //   icon: false,
+      // })();
 
       // alert(messageBody);
     },

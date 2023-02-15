@@ -1,20 +1,16 @@
-import { useRef, useState } from "react";
-import s from "../styles/navigation.module.scss";
+import { useRef, useState } from 'react';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import Image from 'next/image';
+import s from '../styles/navigation.module.scss';
 
-import Link from "next/link";
-import { useRouter } from "next/router";
-
-import Image from "next/image";
-import logoImg from "../public/logo_rgb@2x.webp";
-import burgerBTN from "../public/burgerBTN.svg";
-import crossBTN from "../public/cross.svg";
 export default function Navigation() {
   const navRef = useRef();
 
   const [toggled, setToggled] = useState(false);
 
   const showNavBar = () => {
-    navRef.current.classList.toggle("responsive_nav");
+    navRef.current.classList.toggle('responsive_nav');
     setToggled(!toggled);
   };
 
@@ -26,8 +22,8 @@ export default function Navigation() {
         <header className={s.navigationItems}>
           <div className={s.header_navigation_logo}>
             <Link href="/">
-              <Image
-                src={logoImg}
+              <img
+                src="/logo_rgb@2x.webp"
                 alt="Simple Eglish Logo"
                 width={60}
                 height={60}
@@ -37,30 +33,52 @@ export default function Navigation() {
           </div>
 
           <nav className={s.navBar} ref={navRef}>
-            {(router.pathname === "/privacy_policy" ||
-              router.pathname === "/public_offer_agreement" ||
-              router.pathname === "/test" ||
-              router.pathname === "/speakingclub" ||
-              router.pathname === "/english_for_move" ||
-              router.pathname === "/companies") && (
+            {(router.pathname === '/privacy_policy' ||
+              router.pathname === '/public_offer_agreement' ||
+              router.pathname === '/test' ||
+              router.pathname === '/speakingclub' ||
+              router.pathname === '/english_for_move' ||
+              router.pathname === '/companies') && (
               <Link href="/">
                 <a>На головну</a>
               </Link>
             )}
-
-            {router.pathname === "/companies" && (
-              <Link href="/speakingclub">
-                <a>Speaking club</a>
-              </Link>
+            {router.pathname === '/companies' && (
+              <>
+                <Link href="/speakingclub">
+                  <a>Speaking club</a>
+                </Link>
+                <Link href="/speaking-club-schedule">
+                  <a>Розклад</a>
+                </Link>
+              </>
+            )}
+            {router.pathname === '/speakingclub' && (
+              <>
+                <Link href="/companies">
+                  <a>Для компаній</a>
+                </Link>
+                <Link href="/speaking-club-schedule">
+                  <a>Розклад</a>
+                </Link>
+              </>
             )}
 
-            {router.pathname === "/speakingclub" && (
-              <Link href="/companies">
-                <a>Для компаній</a>
-              </Link>
+            {router.pathname === '/speaking-club-schedule' && (
+              <>
+                <Link href="/">
+                  <a>На головну</a>
+                </Link>
+                <Link href="/speakingclub">
+                  <a>Speaking club</a>
+                </Link>
+                <Link href="/companies">
+                  <a>Для компаній</a>
+                </Link>
+              </>
             )}
 
-            {router.pathname === "/" && (
+            {router.pathname === '/' && (
               <>
                 <Link href="/companies">
                   <a>Для компаній</a>
@@ -70,31 +88,13 @@ export default function Navigation() {
                   <a>Speaking club</a>
                 </Link>
 
-                {/* <Link href="#about">
-                  <a>Про нас</a>
+                <Link href="/speaking-club-schedule">
+                  <a>Розклад</a>
                 </Link>
-                <Link href="#groups">
-                  <a> Групи</a>
-                </Link>
-                <Link href="/test">
-                  <a>Тест </a>
-                </Link>
-                <Link href="#reviews">
-                  <a>Відгуки</a>
-                </Link>
-                <Link href="#faq">
-                  <a>FAQ </a>
-                </Link>
-                <Link href="/blog">
-                  <a> Блог</a>
-                </Link>
-                <Link href="#contacts">
-                  <a> Контакти</a>
-                </Link> */}
 
                 <button className="nav_btn nav_close_btn" onClick={showNavBar}>
-                  <Image
-                    src={crossBTN}
+                  <img
+                    src="/cross.svg"
                     alt="menu button"
                     width={34}
                     height={21}
@@ -102,14 +102,6 @@ export default function Navigation() {
                 </button>
               </>
             )}
-
-            {/* {toggled && (
-              <div className={s.form_button_container}>
-                <button type="submit" className={s.form_button}>
-                  передзвоніть мені
-                </button>
-              </div>
-            )} */}
           </nav>
 
           {!toggled && (
@@ -147,7 +139,7 @@ export default function Navigation() {
 
               <button className="nav_btn " onClick={showNavBar}>
                 <Image
-                  src={burgerBTN}
+                  src="/burgerBTN.svg"
                   alt="menu button"
                   width={34}
                   height={21}

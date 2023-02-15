@@ -6,69 +6,72 @@ $cubic: cubic-bezier(0.4, 0, 0.2, 1);
 @import-normalize;
 
 @font-face {
-  font-family: "Verdana";
+  font-family: 'Verdana';
   font-display: swap;
-  src: url("../fonts/Verdana/Verdana.ttf");
+  src: url('../fonts/Verdana/Verdana.ttf');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Verdana";
+  font-family: 'Verdana';
   font-display: swap;
-  src: url("../fonts/Verdana/Verdana-Bold.ttf");
+  src: url('../fonts/Verdana/Verdana-Bold.ttf');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "appleberry";
+  font-family: 'appleberry';
   font-display: swap;
-  src: url("../fonts/APPLEBERRY/APPLEBERRY.TTF");
+  src: url('../fonts/APPLEBERRY/APPLEBERRY.TTF');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Mont";
+  font-family: 'Mont';
   font-display: swap;
-  src: url("../fonts/Mont/Mont-Regular.ttf");
+  src: url('../fonts/Mont/Mont-Regular.ttf');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Mont";
+  font-family: 'Mont';
   font-display: swap;
-  src: url("../fonts/Mont/Mont-Bold.ttf");
+  src: url('../fonts/Mont/Mont-Bold.ttf');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Mont";
+  font-family: 'Mont';
   font-display: swap;
-  src: url("../fonts/Mont/Mont-ExtraLight.ttf");
+  src: url('../fonts/Mont/Mont-ExtraLight.ttf');
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Mont";
+  font-family: 'Mont';
   font-display: swap;
-  src: url("../fonts/Mont/Mont-Light.ttf");
+  src: url('../fonts/Mont/Mont-Light.ttf');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Mont";
+  font-family: 'Mont';
   font-display: swap;
-  src: url("../fonts/Mont/Mont-Thin.ttf");
+  src: url('../fonts/Mont/Mont-Thin.ttf');
   font-weight: 100;
   font-style: normal;
 }
 
+html {
+  // font-size: 62.5%;
+}
 html,
 body {
   padding: 0;
@@ -135,7 +138,7 @@ button {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  clippath: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -234,15 +237,16 @@ button {
     position: fixed;
     top: 0;
     right: 0;
-    width: 320px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #874b79;
-    transition: 0.1s;
+    transition: 0.2s;
     transform: translateY(-100vh);
   }
+
   header .responsive_nav {
     transform: none;
   }
@@ -268,7 +272,7 @@ button {
   padding: 18px 30px 15px 30px;
   border-style: none;
   border-radius: 50px;
-  font-family: "Mont";
+  font-family: 'Mont';
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -322,4 +326,45 @@ button {
 
 .swiper-pagination-bullet {
   background-color: #ffd24e !important;
+}
+
+.something {
+  background-color: red;
+}
+
+.navBar {
+  margin-left: 60px;
+  font-family: 'Mont';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  a {
+    @media only screen and (max-width: 1199px) {
+      padding-left: 45px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    :not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+  @media only screen and (max-width: 1199px) and (min-width: 768px) {
+    width: 400px;
+  }
+
+  @media only screen and (max-width: 1199px) {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 0px;
+    font-family: 'Mont';
+    text-align: left;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 55px;
+    /* or 220% */
+
+    color: #ffffff;
+  }
 }
