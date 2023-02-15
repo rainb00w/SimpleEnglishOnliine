@@ -1,13 +1,13 @@
-import Navigation from "../components/navigation";
-import Footer from "../components/footer";
-import s from "../styles/english_for_move.module.scss";
-import React from "react";
-import { Bird } from "../components/smallComponents/bird";
-import Link from "next/link";
-import useWindowSize from "../hooks/useWidthHook";
-import Image from "next/image";
-import girlDesktop from "../public/img/forAdults/girl2_desktop@2x.jpg";
-import girlMobile from "../public/img/forAdults/girl2_mobile@2x.jpg";
+import Navigation from '../components/navigation';
+import Footer from '../components/footer';
+import s from '../styles/english_for_move.module.scss';
+import React from 'react';
+import { Bird } from '../components/smallComponents/bird';
+import Link from 'next/link';
+import useWindowSize from '../hooks/useWidthHook';
+
+import girlDesktop from '../public/img/forAdults/girl2_desktop@2x.jpg';
+import girlMobile from '../public/img/forAdults/girl2_mobile@2x.jpg';
 
 export default function EnglishForMoveCourse() {
   const { width } = useWindowSize();
@@ -24,17 +24,30 @@ export default function EnglishForMoveCourse() {
       ресторані/кафе Модуль 10. Як записатися на безкоштовні курси закордоном
       Для кого цей курс? складові
       <p>
-      <form method="POST" accept-charset="utf-8" action="https://www.liqpay.ua/api/3/checkout">
-  <input type="hidden" name="data" value="eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXkiLCJhbW91bnQiOjUsImN1cnJlbmN5IjoiVUFIIiwiZGVzY3JpcHRpb24iOiLQnNGW0Lkg0YLQvtCy0LDRgCIsInB1YmxpY19rZXkiOiJzYW5kYm94X2k5MjIyOTUyNzQ2NCIsImxhbmd1YWdlIjoicnUifQ==" />
-  <input type="hidden" name="signature" value="Z1D0QbnNVbItKr6BBVoXYpxl7Ds=" />
-  <button >
-    <img src="https://static.liqpay.ua/buttons/logo-small.png" name="btn_text"
-      />
-    <span >Сплатити 5 UAH</span>
-  </button>
-</form>
+        <form
+          method="POST"
+          accept-charset="utf-8"
+          action="https://www.liqpay.ua/api/3/checkout"
+        >
+          <input
+            type="hidden"
+            name="data"
+            value="eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXkiLCJhbW91bnQiOjUsImN1cnJlbmN5IjoiVUFIIiwiZGVzY3JpcHRpb24iOiLQnNGW0Lkg0YLQvtCy0LDRgCIsInB1YmxpY19rZXkiOiJzYW5kYm94X2k5MjIyOTUyNzQ2NCIsImxhbmd1YWdlIjoicnUifQ=="
+          />
+          <input
+            type="hidden"
+            name="signature"
+            value="Z1D0QbnNVbItKr6BBVoXYpxl7Ds="
+          />
+          <button>
+            <img
+              src="https://static.liqpay.ua/buttons/logo-small.png"
+              name="btn_text"
+            />
+            <span>Сплатити 5 UAH</span>
+          </button>
+        </form>
       </p>
-   
       {/* <div className="container">
           <div className={s.bonusesFlex} id="bonuses">
             <div>

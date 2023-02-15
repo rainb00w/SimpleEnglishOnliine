@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import Image from 'next/image';
+
 import s from '../styles/navigation.module.scss';
 
 export default function Navigation() {
@@ -116,7 +116,7 @@ export default function Navigation() {
               </a>
 
               <button className="nav_btn " onClick={showNavBar}>
-                <Image
+                <img
                   src="/burgerBTN.svg"
                   alt="menu button"
                   width={34}

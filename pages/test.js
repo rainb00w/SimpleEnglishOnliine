@@ -1,213 +1,212 @@
-import Navigation from "../components/navigation";
-import Footer from "../components/footer";
-import s from "../styles/testQuiz.module.scss";
-import React, { useState } from "react";
-import Image from "next/image";
-import quizResultsPic from "../public/img/forAdults/testLinkPic.webp";
+import Navigation from '../components/navigation';
+import Footer from '../components/footer';
+import s from '../styles/testQuiz.module.scss';
+import React, { useState } from 'react';
+import quizResultsPic from '../public/img/forAdults/testLinkPic.webp';
 
 export default function Test() {
   const questions = [
     {
-      questionText: "Where ... you from?",
+      questionText: 'Where ... you from?',
       answerOptions: [
-        { answerText: "are", isCorrect: true },
-        { answerText: "-", isCorrect: false },
-        { answerText: "is", isCorrect: false },
-        { answerText: "Не знаю", isCorrect: false },
+        { answerText: 'are', isCorrect: true },
+        { answerText: '-', isCorrect: false },
+        { answerText: 'is', isCorrect: false },
+        { answerText: 'Не знаю', isCorrect: false },
       ],
     },
     {
-      questionText: "These are our parents. ... live in Scotland.",
+      questionText: 'These are our parents. ... live in Scotland.',
       answerOptions: [
-        { answerText: "We", isCorrect: false },
-        { answerText: "He", isCorrect: false },
-        { answerText: "They", isCorrect: true },
-        { answerText: "Не знаю", isCorrect: false },
+        { answerText: 'We', isCorrect: false },
+        { answerText: 'He', isCorrect: false },
+        { answerText: 'They', isCorrect: true },
+        { answerText: 'Не знаю', isCorrect: false },
       ],
     },
     {
-      questionText: "She is from the USA. She can speak ... .",
+      questionText: 'She is from the USA. She can speak ... .',
       answerOptions: [
-        { answerText: "on English", isCorrect: false },
-        { answerText: "English", isCorrect: true },
-        { answerText: "in the English", isCorrect: false },
-        { answerText: "Не знаю", isCorrect: false },
-      ],
-    },
-    {
-      questionText:
-        "I like this new ... , it’s so beautiful and really suits you.",
-      answerOptions: [
-        { answerText: "jeans", isCorrect: false },
-        { answerText: "dress", isCorrect: true },
-        { answerText: "shorts", isCorrect: false },
-        { answerText: "Не знаю", isCorrect: false },
-      ],
-    },
-    {
-      questionText: "We like ... in the park.",
-      answerOptions: [
-        { answerText: "run", isCorrect: false },
-        { answerText: "to drive", isCorrect: false },
-        { answerText: "running", isCorrect: true },
-        { answerText: "Не знаю", isCorrect: false },
-      ],
-    },
-    {
-      questionText: "Can I ... a sandwich, please?",
-      answerOptions: [
-        { answerText: "have", isCorrect: true },
-        { answerText: "give", isCorrect: false },
-        { answerText: "buy", isCorrect: false },
-        { answerText: "Не знаю", isCorrect: false },
-      ],
-    },
-    {
-      questionText: "Do you like going ... with your friends?",
-      answerOptions: [
-        { answerText: "back", isCorrect: false },
-        { answerText: "out", isCorrect: true },
-        { answerText: "away", isCorrect: false },
-        { answerText: "Не знаю", isCorrect: false },
-      ],
-    },
-    {
-      questionText: "The opposite of ‘expensive’ is ... .",
-      answerOptions: [
-        { answerText: "cheap", isCorrect: true },
-        { answerText: "light", isCorrect: false },
-        { answerText: "poor", isCorrect: false },
-        { answerText: "Не знаю", isCorrect: false },
-      ],
-    },
-    {
-      questionText: "He ... so fast I couldn’t remember the way.",
-      answerOptions: [
-        { answerText: "drive", isCorrect: false },
-        { answerText: "drove", isCorrect: true },
-        { answerText: "driven", isCorrect: false },
-        { answerText: "Не знаю", isCorrect: false },
-      ],
-    },
-    {
-      questionText: "I’m much ... than my sister. She is 14.",
-      answerOptions: [
-        { answerText: "old", isCorrect: false },
-        { answerText: "older", isCorrect: true },
-        { answerText: "oldest", isCorrect: false },
-        { answerText: "Не знаю", isCorrect: false },
+        { answerText: 'on English', isCorrect: false },
+        { answerText: 'English', isCorrect: true },
+        { answerText: 'in the English', isCorrect: false },
+        { answerText: 'Не знаю', isCorrect: false },
       ],
     },
     {
       questionText:
-        "What are your plans for this summer? – I ... to see the Eiffel Tower!",
+        'I like this new ... , it’s so beautiful and really suits you.',
       answerOptions: [
-        { answerText: "will", isCorrect: false },
-        { answerText: "am going", isCorrect: true },
-        { answerText: "go", isCorrect: false },
-        { answerText: "Не знаю", isCorrect: false },
+        { answerText: 'jeans', isCorrect: false },
+        { answerText: 'dress', isCorrect: true },
+        { answerText: 'shorts', isCorrect: false },
+        { answerText: 'Не знаю', isCorrect: false },
       ],
     },
     {
-      questionText: "This is ... film I’ve ever watched. I love it!",
+      questionText: 'We like ... in the park.',
       answerOptions: [
-        { answerText: "better", isCorrect: false },
-        { answerText: "the best", isCorrect: true },
-        { answerText: "good", isCorrect: false },
-        { answerText: "Не знаю", isCorrect: false },
+        { answerText: 'run', isCorrect: false },
+        { answerText: 'to drive', isCorrect: false },
+        { answerText: 'running', isCorrect: true },
+        { answerText: 'Не знаю', isCorrect: false },
       ],
     },
     {
-      questionText: "I couldn’t remember if I ... that woman before.",
+      questionText: 'Can I ... a sandwich, please?',
       answerOptions: [
-        { answerText: "had seen", isCorrect: true },
-        { answerText: "have seen", isCorrect: false },
-        { answerText: "saw", isCorrect: false },
-        { answerText: "Не знаю", isCorrect: false },
+        { answerText: 'have', isCorrect: true },
+        { answerText: 'give', isCorrect: false },
+        { answerText: 'buy', isCorrect: false },
+        { answerText: 'Не знаю', isCorrect: false },
       ],
     },
     {
-      questionText: "We’ve known each other ... 10 years.",
+      questionText: 'Do you like going ... with your friends?',
       answerOptions: [
-        { answerText: "since", isCorrect: false },
-        { answerText: "for", isCorrect: true },
-        { answerText: "before", isCorrect: false },
-        { answerText: "Не знаю", isCorrect: false },
+        { answerText: 'back', isCorrect: false },
+        { answerText: 'out', isCorrect: true },
+        { answerText: 'away', isCorrect: false },
+        { answerText: 'Не знаю', isCorrect: false },
       ],
     },
     {
-      questionText:
-        "There are terrible traffic ... in the city. I’d better live in a village.",
+      questionText: 'The opposite of ‘expensive’ is ... .',
       answerOptions: [
-        { answerText: "jams", isCorrect: true },
-        { answerText: "accident", isCorrect: false },
-        { answerText: "roads", isCorrect: false },
-        { answerText: "Не знаю", isCorrect: false },
+        { answerText: 'cheap', isCorrect: true },
+        { answerText: 'light', isCorrect: false },
+        { answerText: 'poor', isCorrect: false },
+        { answerText: 'Не знаю', isCorrect: false },
       ],
     },
     {
-      questionText:
-        "He’s so ... . He never pays for anyone, even for his girlfriend.",
+      questionText: 'He ... so fast I couldn’t remember the way.',
       answerOptions: [
-        { answerText: "generous", isCorrect: false },
-        { answerText: "mean", isCorrect: true },
-        { answerText: "smart", isCorrect: false },
-        { answerText: "Не знаю", isCorrect: false },
+        { answerText: 'drive', isCorrect: false },
+        { answerText: 'drove', isCorrect: true },
+        { answerText: 'driven', isCorrect: false },
+        { answerText: 'Не знаю', isCorrect: false },
       ],
     },
     {
-      questionText: "A teapot is a pot with a handle, in ... tea is brewed.",
+      questionText: 'I’m much ... than my sister. She is 14.',
       answerOptions: [
-        { answerText: "that", isCorrect: false },
-        { answerText: "what", isCorrect: false },
-        { answerText: "which", isCorrect: true },
-        { answerText: "Не знаю", isCorrect: false },
-      ],
-    },
-    {
-      questionText: "If you ... me earlier, I wouldn’t have been so angry.",
-      answerOptions: [
-        { answerText: "have told", isCorrect: false },
-        { answerText: "had told", isCorrect: true },
-        { answerText: "had said", isCorrect: false },
-        { answerText: "Не знаю", isCorrect: false },
-      ],
-    },
-    {
-      questionText: "I ... like singing when I was a child, but now I don’t.",
-      answerOptions: [
-        { answerText: "used to", isCorrect: true },
-        { answerText: "use to", isCorrect: false },
-        { answerText: "didn’t", isCorrect: false },
-        { answerText: "Не знаю", isCorrect: false },
-      ],
-    },
-    {
-      questionText: "I’ve just quit and don’t want to ... for a new job.",
-      answerOptions: [
-        { answerText: "apply", isCorrect: true },
-        { answerText: "search", isCorrect: false },
-        { answerText: "have", isCorrect: false },
-        { answerText: "Не знаю", isCorrect: false },
+        { answerText: 'old', isCorrect: false },
+        { answerText: 'older', isCorrect: true },
+        { answerText: 'oldest', isCorrect: false },
+        { answerText: 'Не знаю', isCorrect: false },
       ],
     },
     {
       questionText:
-        "I like watching how people are trying to ... different crimes, so I like detectives.",
+        'What are your plans for this summer? – I ... to see the Eiffel Tower!',
       answerOptions: [
-        { answerText: "decide", isCorrect: false },
-        { answerText: "solve", isCorrect: true },
-        { answerText: "open", isCorrect: false },
-        { answerText: "Не знаю", isCorrect: false },
+        { answerText: 'will', isCorrect: false },
+        { answerText: 'am going', isCorrect: true },
+        { answerText: 'go', isCorrect: false },
+        { answerText: 'Не знаю', isCorrect: false },
       ],
     },
     {
-      questionText: "I fell in love ... her at first sight.",
+      questionText: 'This is ... film I’ve ever watched. I love it!',
       answerOptions: [
-        { answerText: "for", isCorrect: false },
-        { answerText: "on", isCorrect: false },
-        { answerText: "with", isCorrect: true },
-        { answerText: "Не знаю", isCorrect: false },
+        { answerText: 'better', isCorrect: false },
+        { answerText: 'the best', isCorrect: true },
+        { answerText: 'good', isCorrect: false },
+        { answerText: 'Не знаю', isCorrect: false },
+      ],
+    },
+    {
+      questionText: 'I couldn’t remember if I ... that woman before.',
+      answerOptions: [
+        { answerText: 'had seen', isCorrect: true },
+        { answerText: 'have seen', isCorrect: false },
+        { answerText: 'saw', isCorrect: false },
+        { answerText: 'Не знаю', isCorrect: false },
+      ],
+    },
+    {
+      questionText: 'We’ve known each other ... 10 years.',
+      answerOptions: [
+        { answerText: 'since', isCorrect: false },
+        { answerText: 'for', isCorrect: true },
+        { answerText: 'before', isCorrect: false },
+        { answerText: 'Не знаю', isCorrect: false },
+      ],
+    },
+    {
+      questionText:
+        'There are terrible traffic ... in the city. I’d better live in a village.',
+      answerOptions: [
+        { answerText: 'jams', isCorrect: true },
+        { answerText: 'accident', isCorrect: false },
+        { answerText: 'roads', isCorrect: false },
+        { answerText: 'Не знаю', isCorrect: false },
+      ],
+    },
+    {
+      questionText:
+        'He’s so ... . He never pays for anyone, even for his girlfriend.',
+      answerOptions: [
+        { answerText: 'generous', isCorrect: false },
+        { answerText: 'mean', isCorrect: true },
+        { answerText: 'smart', isCorrect: false },
+        { answerText: 'Не знаю', isCorrect: false },
+      ],
+    },
+    {
+      questionText: 'A teapot is a pot with a handle, in ... tea is brewed.',
+      answerOptions: [
+        { answerText: 'that', isCorrect: false },
+        { answerText: 'what', isCorrect: false },
+        { answerText: 'which', isCorrect: true },
+        { answerText: 'Не знаю', isCorrect: false },
+      ],
+    },
+    {
+      questionText: 'If you ... me earlier, I wouldn’t have been so angry.',
+      answerOptions: [
+        { answerText: 'have told', isCorrect: false },
+        { answerText: 'had told', isCorrect: true },
+        { answerText: 'had said', isCorrect: false },
+        { answerText: 'Не знаю', isCorrect: false },
+      ],
+    },
+    {
+      questionText: 'I ... like singing when I was a child, but now I don’t.',
+      answerOptions: [
+        { answerText: 'used to', isCorrect: true },
+        { answerText: 'use to', isCorrect: false },
+        { answerText: 'didn’t', isCorrect: false },
+        { answerText: 'Не знаю', isCorrect: false },
+      ],
+    },
+    {
+      questionText: 'I’ve just quit and don’t want to ... for a new job.',
+      answerOptions: [
+        { answerText: 'apply', isCorrect: true },
+        { answerText: 'search', isCorrect: false },
+        { answerText: 'have', isCorrect: false },
+        { answerText: 'Не знаю', isCorrect: false },
+      ],
+    },
+    {
+      questionText:
+        'I like watching how people are trying to ... different crimes, so I like detectives.',
+      answerOptions: [
+        { answerText: 'decide', isCorrect: false },
+        { answerText: 'solve', isCorrect: true },
+        { answerText: 'open', isCorrect: false },
+        { answerText: 'Не знаю', isCorrect: false },
+      ],
+    },
+    {
+      questionText: 'I fell in love ... her at first sight.',
+      answerOptions: [
+        { answerText: 'for', isCorrect: false },
+        { answerText: 'on', isCorrect: false },
+        { answerText: 'with', isCorrect: true },
+        { answerText: 'Не знаю', isCorrect: false },
       ],
     },
   ];
@@ -383,7 +382,7 @@ export default function Test() {
             <>
               <div className={s.question_count}>
                 <span className={s.header_title}>
-                  Запитання {currentQuestion + 1} / {questions.length}{" "}
+                  Запитання {currentQuestion + 1} / {questions.length}{' '}
                 </span>
                 <p className={s.header_text}>Обери правильний варіант</p>
               </div>

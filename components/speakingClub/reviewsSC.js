@@ -1,9 +1,9 @@
-import s from "../../styles/sc/reviewsSC.module.scss";
-import Image from "next/image";
-// import reviewsImage from "../public/img/forAdults/reviews1.webp";
-import reviewsImage from "../../public/img/forAdults/reviews1.webp";
+import s from '../../styles/sc/reviewsSC.module.scss';
 
-import React, { useState, useRef } from "react";
+// import reviewsImage from "../public/img/forAdults/reviews1.webp";
+import reviewsImage from '../../public/img/forAdults/reviews1.webp';
+
+import React, { useState, useRef } from 'react';
 // import { Swiper, SwiperSlide } from "swiper/react";
 // import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 // import "swiper/css";

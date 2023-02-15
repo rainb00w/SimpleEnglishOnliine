@@ -1,6 +1,6 @@
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-import Image from 'next/image';
+
 import axios from 'axios';
 
 import useWindowSize from '../../hooks/useWidthHook';
@@ -75,7 +75,7 @@ export default function CompaniesHeader() {
 
             <div className={s.girlImage}>
               {width < 768 && (
-                <Image
+                <img
                   src={girlMobile}
                   alt="Teacher"
                   //  width={470}
@@ -84,7 +84,7 @@ export default function CompaniesHeader() {
                 />
               )}
               {width < 1200 && width > 768 && (
-                <Image
+                <img
                   src={girlTablet}
                   alt="Teacher"
                   //  width={470}
@@ -94,7 +94,7 @@ export default function CompaniesHeader() {
               )}
 
               {width > 1200 && (
-                <Image
+                <img
                   src={girlDesktop}
                   alt="Teacher"
                   //  width={470}

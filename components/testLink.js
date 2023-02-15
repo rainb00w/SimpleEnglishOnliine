@@ -1,7 +1,6 @@
-import Image from "next/image";
-import Link from "next/link";
-import s from "../styles/testLink.module.scss";
-import testLinkPic from "../public/img/forAdults/testLinkPic.png";
+import Link from 'next/link';
+import s from '../styles/testLink.module.scss';
+import testLinkPic from '../public/img/forAdults/testLinkPic.png';
 
 export default function TestLink() {
   return (

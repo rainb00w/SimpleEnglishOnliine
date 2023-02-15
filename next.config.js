@@ -7,9 +7,10 @@ const nextConfig = {
 module.exports = nextConfig;
 
 module.exports = {
-  images: {
-    loader: 'imgix',
-    path: 'https://noop/',
+  experimental: {
+    images: {
+      unoptimized: true,
+    },
   },
 };
 

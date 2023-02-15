@@ -1,8 +1,8 @@
-import useWindowSize from "../hooks/useWidthHook";
-import Image from "next/image";
-import girlDesktop from "../public/img/forAdults/girl2_desktop@2x.jpg";
-import girlMobile from "../public/img/forAdults/girl2_mobile@2x.jpg";
-import s from "../styles/bonuses.module.scss";
+import useWindowSize from '../hooks/useWidthHook';
+
+import girlDesktop from '../public/img/forAdults/girl2_desktop@2x.jpg';
+import girlMobile from '../public/img/forAdults/girl2_mobile@2x.jpg';
+import s from '../styles/bonuses.module.scss';
 
 export default function Bonuses() {
   const { width } = useWindowSize();
@@ -21,7 +21,7 @@ export default function Bonuses() {
               </h2>
 
               {width < 1200 ? (
-                <Image
+                <img
                   src={girlMobile}
                   alt="Teacher"
                   //  width={470}
@@ -29,7 +29,7 @@ export default function Bonuses() {
                   placeholder="blur" // Optional blur-up while loading
                 />
               ) : (
-                <Image
+                <img
                   src={girlDesktop}
                   alt="Teacher"
                   width={470}
@@ -88,7 +88,7 @@ export default function Bonuses() {
                       Як ще отримати додаткову знижку на навчання?
                     </span>
                     <span className={s.listText}>
-                      Запроси друга/колегу в{" "}
+                      Запроси друга/колегу в{' '}
                       <span lang="en">Simple English</span>
                       <b> і отримай бонус 500 грн, </b>
                       який ти можеш використати на навчання у школі. При
@@ -114,9 +114,9 @@ export default function Bonuses() {
                       своїй сторінці.
                       <a href="https://instagram.com/simple.english.online?igshid=YmMyMTA2M2Y=">
                         <button className={s.instagramBtn}>
-                        Відмітити Simple English в
+                          Відмітити Simple English в
                           <svg
-                          className={s.instagramIcon}
+                            className={s.instagramIcon}
                             width="26"
                             height="26"
                             viewBox="0 0 29 29"
