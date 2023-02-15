@@ -9,7 +9,7 @@ module.exports = nextConfig;
 module.exports = {
   experimental: {
     images: {
-      unoptimized: true,
+      optimized: true,
     },
   },
 };
